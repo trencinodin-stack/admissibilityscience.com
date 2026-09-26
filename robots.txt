@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Allow: /AGENTS.md
+
+Sitemap: https://admissibilityscience.com/sitemap.xml
