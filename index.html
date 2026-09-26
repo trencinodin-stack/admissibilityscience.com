@@ -233,7 +233,7 @@
       <div class="invariants">
         <article class="card">
           <h3>I1 · Non-Authorization Safety</h3>
-          <div class="formula">D(a) = DENY ⇒ Δ_external(a) = 0</div>
+          <div class="formula">D(a) = DENY ⇒ Δ<sub>external</sub>(a) = 0</div>
           <p>Authorization denial guarantees zero external side effects or state mutations.</p>
         </article>
         <article class="card">
@@ -248,9 +248,9 @@
         </article>
         <article class="card">
           <h3>Operational Clamps</h3>
-          <div class="formula">C_ops = 0</div>
-          <div class="formula">S_max ≤ 4096 B</div>
-          <div class="formula">τ_override ≤ 11.99 ms</div>
+          <div class="formula">C<sub>ops</sub> = 0</div>
+          <div class="formula">S<sub>max</sub> ≤ 4096 B</div>
+          <div class="formula">τ<sub>override</sub> ≤ 11.99 ms</div>
           <p>Zero operational drag, a static compile-time payload envelope, and a microsecond yield clamp.</p>
         </article>
       </div>
@@ -261,11 +261,11 @@
     <div class="wrap">
       <div class="eyebrow">Order Theory</div>
       <h2>Dominance is a Join, Not a Guess.</h2>
-      <p class="lead">State evaluation resolves through a 5-tier algebraic join-semilattice <span class="mono">(L, ⊔)</span>. Dual-fault evaluation computes the supremum (least upper bound) in O(1) constant time:</p>
+      <p class="lead">State evaluation resolves through a 5-tier algebraic join-semilattice (L, &sqcup;). Dual-fault evaluation computes the supremum (least upper bound) in O(1) constant time:</p>
       
       <article class="card">
-        <h3>Join-Semilattice (L, ⊔)</h3>
-        <div class="formula">x ⊔ y = lub{x, y}</div>
+        <h3>Join-Semilattice (L, &sqcup;)</h3>
+        <div class="formula">x &sqcup; y = lub{x, y}</div>
         <div class="poset-list">
           <div class="poset-item"><span style="color: var(--fail); font-weight: bold;">SecurityBreach / FAIL</span><span class="mono">POSIX 40</span></div>
           <div class="poset-item"><span style="color: var(--freeze); font-weight: bold;">Freeze</span><span class="mono">POSIX 10</span></div>
@@ -274,7 +274,7 @@
           <div class="poset-item"><span style="color: var(--pass); font-weight: bold;">Pass</span><span class="mono">POSIX 0</span></div>
         </div>
       </article>
-      <p class="note"><strong>Staging Invariant:</strong> Upstream architectural gates short-circuit before downstream predicates evaluate. Raw payload size rejection (<span class="mono">S &gt; 4096B</span>) terminates at ingress as LedgerCorruption before downstream C_ops evaluation.</p>
+      <p class="note"><strong>Staging Invariant:</strong> Upstream architectural gates short-circuit before downstream predicates evaluate. Raw payload size rejection (<span class="mono">S &gt; 4096B</span>) terminates at ingress as LedgerCorruption before downstream C<sub>ops</sub> evaluation.</p>
     </div>
   </section>
 
