@@ -75,7 +75,7 @@
     .invariants { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
     .invariants .card:first-child { grid-column: 1 / -1; }
     .poset-list { display: flex; flex-direction: column; gap: 8px; margin-top: 14px; }
-    .poset-item { display: flex; justify-content: space-between; align-items: center; border: 1px solid var(--line); background: var(--panel2); border-radius: 99px; padding: 10px 14px; font-family: var(--font-mono); font-size: .88rem; }
+    .poset-item { display: flex; justify-content: space-between; align-items: center; border: 1px solid var(--line); background: var(--panel2); border-radius: 9px; padding: 10px 14px; font-family: var(--font-mono); font-size: .88rem; }
     .routes { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
     .route { display: block; color: inherit; text-decoration: none; border: 1px solid var(--line); border-radius: var(--r); padding: 28px; background: var(--panel); transition: .16s transform, .16s border-color; }
     .route:hover { transform: translateY(-2px); border-color: #4e667d; color: inherit; }
@@ -261,10 +261,10 @@
     <div class="wrap">
       <div class="eyebrow">Order Theory</div>
       <h2>Dominance is a Join, Not a Guess.</h2>
-      <p class="lead">State evaluation resolves through a 5-tier algebraic join-semilattice (L, &sqcup;). Dual-fault evaluation computes the supremum (least upper bound) in O(1) constant time:</p>
+      <p class="lead">State evaluation resolves through a 5-tier algebraic join-semilattice (L, <span class="mono">&sqcup;</span>). Dual-fault evaluation computes the supremum (least upper bound) in O(1) constant time:</p>
       
       <article class="card">
-        <h3>Join-Semilattice (L, &sqcup;)</h3>
+        <h3>Join-Semilattice (L, <span class="mono">&sqcup;</span>)</h3>
         <div class="formula">x &sqcup; y = lub{x, y}</div>
         <div class="poset-list">
           <div class="poset-item"><span style="color: var(--fail); font-weight: bold;">SecurityBreach / FAIL</span><span class="mono">POSIX 40</span></div>
