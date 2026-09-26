@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#090d12">
+  <meta name="description" content="Admissibility Science — canonical public root for admissibility-first systems, epistemic protocol invariants, formal execution bounds, and ecosystem routing.">
+  <meta name="author" content="Jesse Tuohy">
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+  <link rel="canonical" href="https://admissibilityscience.com/">
+  <link rel="author" href="https://orcid.org/0009-0008-4661-1540">
+  <title>Admissibility Science — Canonical Root</title>
+  <style>
+    :root {
+      --bg: #090d12;
+      --panel: #0f151d;
+      --panel2: #121a24;
+      --text: #eef3f8;
+      --muted: #9caaba;
+      --line: #263241;
+      --accent: #8dd8ff;
+      --accent2: #b6f0d2;
+      --warn: #ffd58a;
+      --fail: #f87171;
+      --freeze: #ffd58a;
+      --refusal: #8dd8ff;
+      --pass: #34d399;
+      --max: 1180px;
+      --r: 18px;
+      --font-mono: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: radial-gradient(circle at 80% 0, #102234 0, transparent 30rem), var(--bg);
+      color: var(--text);
+      font: 16px/1.65 ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+    a { color: var(--accent); text-decoration-thickness: .08em; text-underline-offset: .2em; }
+    a:hover { color: #c8edff; }
+    .wrap { width: min(calc(100% - 32px), var(--max)); margin: auto; }
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 5;
+      background: rgba(9, 13, 18, .86);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid rgba(255, 255, 255, .07);
+    }
+    nav { min-height: 64px; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+    .brand { font-weight: 760; letter-spacing: .02em; color: var(--text); text-decoration: none; }
+    .navlinks { display: flex; gap: 18px; flex-wrap: wrap; }
+    .navlinks a { color: var(--muted); text-decoration: none; font-size: .92rem; }
+    .navlinks a:hover { color: var(--text); }
+    main { padding: 72px 0 56px; }
+    .eyebrow { color: var(--accent2); font-size: .78rem; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; }
+    .hero { display: grid; grid-template-columns: 1.45fr .8fr; gap: 44px; align-items: end; padding: 54px 0 72px; }
+    .hero h1 { font-size: clamp(3rem, 8vw, 5.8rem); line-height: .95; letter-spacing: -.05em; margin: .18em 0; }
+    .hero p { font-size: clamp(1.08rem, 2vw, 1.35rem); max-width: 760px; color: #c2ccd7; }
+    .anchor { font: 600 .9rem/1.4 var(--font-mono); color: var(--accent2); word-break: break-word; }
+    .status { border: 1px solid var(--line); background: linear-gradient(180deg, rgba(255,255,255,.035), rgba(255,255,255,.015)); border-radius: var(--r); padding: 24px; }
+    .status strong { display: block; font-size: 1.05rem; margin-bottom: 8px; }
+    .status p { margin: 0; color: var(--muted); font-size: .94rem; }
+    section { padding: 56px 0; border-top: 1px solid var(--line); }
+    h2 { font-size: clamp(2rem, 4vw, 3.4rem); line-height: 1.05; letter-spacing: -.04em; margin: 0 0 16px; }
+    h3 { font-size: 1.08rem; margin: 0 0 10px; }
+    .lead { color: var(--muted); max-width: 800px; margin: 0 0 30px; }
+    .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .card { border: 1px solid var(--line); border-radius: var(--r); padding: 24px; background: var(--panel); }
+    .card p { margin: .35rem 0 0; color: var(--muted); }
+    code, .mono { font-family: var(--font-mono); }
+    .formula { font-size: clamp(1.15rem, 2vw, 1.4rem); color: var(--accent2); margin: .45rem 0; font-family: var(--font-mono); }
+    .invariants { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+    .invariants .card:first-child { grid-column: 1 / -1; }
+    .poset-list { display: flex; flex-direction: column; gap: 8px; margin-top: 14px; }
+    .poset-item { display: flex; justify-content: space-between; align-items: center; border: 1px solid var(--line); background: var(--panel2); border-radius: 9px; padding: 10px 14px; font-family: var(--font-mono); font-size: .88rem; }
+    .routes { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+    .route { display: block; color: inherit; text-decoration: none; border: 1px solid var(--line); border-radius: var(--r); padding: 28px; background: var(--panel); transition: .16s transform, .16s border-color; }
+    .route:hover { transform: translateY(-2px); border-color: #4e667d; color: inherit; }
+    .route small { color: var(--accent2); text-transform: uppercase; letter-spacing: .12em; font-weight: 800; }
+    .route p { color: var(--muted); margin-bottom: 0; }
+    .sources { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .source { padding: 17px 18px; border-left: 2px solid var(--line); background: rgba(255,255,255,.018); }
+    .source b { display: block; }
+    .source span { color: var(--muted); font-size: .9rem; }
+    .note { border-left: 3px solid var(--warn); padding: 4px 0 4px 18px; color: #c8d0d9; margin-top: 16px; }
+    .skip { position: absolute; left: -9999px; }
+    .skip:focus { left: 12px; top: 12px; background: #fff; color: #000; padding: 10px; z-index: 99; }
+    footer { border-top: 1px solid var(--line); padding: 28px 0 46px; color: var(--muted); font-size: .9rem; }
+    .foot { display: flex; justify-content: space-between; gap: 24px; flex-wrap: wrap; }
+    @media(max-width: 800px) {
+      .hero, .routes, .sources, .invariants, .grid { grid-template-columns: 1fr; }
+      .invariants .card:first-child { grid-column: auto; }
+      .hero { padding-top: 28px; }
+      .navlinks { display: none; }
+      main { padding-top: 38px; }
+    }
+    @media(prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .route { transition: none; }
+    }
+  </style>
+
+  <!-- Schema.org Machine Graph -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://admissibilityscience.com/#jesse-tuohy",
+        "name": "Jesse Tuohy",
+        "identifier": "0009-0008-4661-1540",
+        "sameAs": [
+          "https://orcid.org/0009-0008-4661-1540",
+          "https://github.com/trencinodin-stack"
+        ]
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://admissibilityscience.com/#arcstone",
+        "name": "Arcstone Adaptive Science Systems, Inc.",
+        "url": "https://www.arcstoneos.com/"
+      },
+      {
+        "@type": "TechArticle",
+        "@id": "https://admissibilityscience.com/#root",
+        "url": "https://admissibilityscience.com/",
+        "headline": "Admissibility Science — Canonical Root",
+        "description": "Canonical public root for admissibility-first systems, epistemic protocol invariants, formal execution bounds, and ecosystem routing.",
+        "author": { "@id": "https://admissibilityscience.com/#jesse-tuohy" },
+        "publisher": { "@id": "https://admissibilityscience.com/#arcstone" },
+        "identifier": [
+          { "@type": "PropertyValue", "propertyID": "Master Anchor", "value": "A-77-DELTA-SHIELD-LOCKED" },
+          { "@type": "PropertyValue", "propertyID": "DOI", "value": "10.5281/zenodo.22665852" },
+          { "@type": "PropertyValue", "propertyID": "DOI", "value": "10.5281/zenodo.22969294" }
+        ],
+        "citation": [
+          "https://doi.org/10.5281/zenodo.22665852",
+          "https://doi.org/10.5281/zenodo.22969294"
+        ],
+        "isPartOf": "https://zenodo.org/communities/arcstone-executive-epistemic-series",
+        "about": ["Admissibility Science", "formal methods", "epistemic protocols", "bounded execution", "join-semilattices", "zero-trust autonomous systems"],
+        "mentions": [
+          { "@id": "https://admissibilityscience.com/#spec" },
+          { "@id": "https://admissibilityscience.com/#core" },
+          { "@type": "WebSite", "name": "Arcstone Science Authority", "url": "https://arcstonescienceauthority.org/" },
+          { "@type": "WebSite", "name": "Arcstone OS", "url": "https://www.arcstoneos.com/" }
+        ]
+      },
+      {
+        "@type": "SoftwareSourceCode",
+        "@id": "https://admissibilityscience.com/#spec",
+        "name": "ARC-SPEC-2026-EPISTEMIC-01 — Epistemic Network Protocol Master Specification",
+        "codeRepository": "https://github.com/trencinodin-stack/arcstone-spec-epistemic-01",
+        "version": "v1.3.1-LOCKED",
+        "identifier": "A-77-DELTA-SHIELD-LOCKED",
+        "author": { "@id": "https://admissibilityscience.com/#jesse-tuohy" },
+        "citation": "https://doi.org/10.5281/zenodo.22665852"
+      },
+      {
+        "@type": "SoftwareSourceCode",
+        "@id": "https://admissibilityscience.com/#core",
+        "name": "arcstone-continuity-core",
+        "description": "Path A public/open reference surface for deterministic Subsystem 9 execution invariants.",
+        "codeRepository": "https://github.com/trencinodin-stack/arcstone-continuity-core",
+        "programmingLanguage": ["Rust", "TypeScript"],
+        "version": "v1.3.1-exec",
+        "identifier": "A-77-DELTA-SHIELD-LOCKED",
+        "author": { "@id": "https://admissibilityscience.com/#jesse-tuohy" }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+<a class="skip" href="#content">Skip to content</a>
+<header>
+  <nav class="wrap" aria-label="Primary">
+    <a class="brand" href="#top">Admissibility Science</a>
+    <div class="navlinks">
+      <a href="#definition">Paradigm</a>
+      <a href="#invariants">Invariants</a>
+      <a href="#formalism">Lattice</a>
+      <a href="#ecosystem">Ecosystem</a>
+      <a href="#sources">Corpus</a>
+    </div>
+  </nav>
+</header>
+<main id="content">
+  <div class="wrap hero" id="top">
+    <div>
+      <div class="eyebrow">Canonical Public Root</div>
+      <h1>Admissibility<br>Science</h1>
+      <p>A formal discipline deciding what may enter, propagate through, or actuate within bounded systems before execution is permitted. Computation is decoupled from authorization.</p>
+      <div class="anchor">MASTER ANCHOR · A-77-DELTA-SHIELD-LOCKED</div>
+    </div>
+    <aside class="status" aria-label="Canonical status">
+      <strong>Reference Posture</strong>
+      <p>Upstream epistemic specification: <span class="mono">v1.3.1-LOCKED</span>. Public Path A execution substrate: <span class="mono">v1.3.1-exec</span>. This root indexes the science; it does not collapse specification, implementation, or deployment into one layer.</p>
+    </aside>
+  </div>
+
+  <section id="definition">
+    <div class="wrap">
+      <div class="eyebrow">The Admissible Paradigm</div>
+      <h2>Admission precedes execution.</h2>
+      <p class="lead">Legacy compute operates under a Permissive Paradigm: accepting arbitrary inputs and failing open until an exception crashes the runtime. Admissibility Science formalizes the Admissible Paradigm—evaluating proposal vectors against mathematical invariants before state mutation is permitted.</p>
+      <div class="grid">
+        <article class="card">
+          <h3>Epistemic Contract</h3>
+          <p>The locked ENP master specification defines language-agnostic invariants, bounds, and dominance semantics.</p>
+        </article>
+        <article class="card">
+          <h3>Reference Execution</h3>
+          <p><span class="mono">arcstone-continuity-core</span> implements a narrow Path A surface for zero-allocation <span class="mono">#![no_std]</span> predicate evaluation.</p>
+        </article>
+        <article class="card">
+          <h3>Deployment Boundary</h3>
+          <p>Industrial runtime architecture remains distinct from the scientific layer; implementation never redefines governing epistemic laws.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="invariants">
+    <div class="wrap">
+      <div class="eyebrow">Technical Invariants</div>
+      <h2>I1–I3 & Bounded Clamps</h2>
+      <p class="lead">Non-negotiable layer-0 contracts enforced before ingress execution:</p>
+      <div class="invariants">
+        <article class="card">
+          <h3>I1 · Non-Authorization Safety</h3>
+          <div class="formula">D(a) = DENY ⇒ Δ_external(a) = 0</div>
+          <p>Authorization denial guarantees zero external side effects or state mutations.</p>
+        </article>
+        <article class="card">
+          <h3>I2 · Single-Use Capability Bounding</h3>
+          <div class="formula">1 valid claim ⇒ ≤ 1 actuation</div>
+          <p>Capabilities bind explicitly to payload SHA-256 hashes and burn atomically before execution.</p>
+        </article>
+        <article class="card">
+          <h3>I3 · Producer Non-Provenance</h3>
+          <div class="formula">untrusted producer ≠ protected resource</div>
+          <p>Non-deterministic producers (LLMs, agents) inherit zero ambient system privilege.</p>
+        </article>
+        <article class="card">
+          <h3>Operational Clamps</h3>
+          <div class="formula">C_ops = 0</div>
+          <div class="formula">S_max ≤ 4096 B</div>
+          <div class="formula">τ_override ≤ 11.99 ms</div>
+          <p>Zero operational drag, a static compile-time payload envelope, and a microsecond yield clamp.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="formalism">
+    <div class="wrap">
+      <div class="eyebrow">Order Theory</div>
+      <h2>Dominance is a Join, Not a Guess.</h2>
+      <p class="lead">State evaluation resolves through a 5-tier algebraic join-semilattice <span class="mono">(L, ⊔)</span>. Dual-fault evaluation computes the supremum (least upper bound) in $O(1)$ constant time:</p>
+      
+      <article class="card">
+        <h3>Join-Semilattice (L, ⊔)</h3>
+        <div class="formula">x ⊔ y = lub{x, y}</div>
+        <div class="poset-list">
+          <div class="poset-item"><span style="color: var(--fail); font-weight: bold;">SecurityBreach / FAIL</span><span class="mono">POSIX 40</span></div>
+          <div class="poset-item"><span style="color: var(--freeze); font-weight: bold;">Freeze</span><span class="mono">POSIX 10</span></div>
+          <div class="poset-item"><span style="color: var(--muted); font-weight: bold;">ProceedWithCaution (PWC)</span><span class="mono">POSIX 10</span></div>
+          <div class="poset-item"><span style="color: var(--refusal); font-weight: bold;">Refusal</span><span class="mono">POSIX 32</span></div>
+          <div class="poset-item"><span style="color: var(--pass); font-weight: bold;">Pass</span><span class="mono">POSIX 0</span></div>
+        </div>
+      </article>
+      <p class="note"><strong>Staging Invariant:</strong> Upstream architectural gates short-circuit before downstream predicates evaluate. Raw payload size rejection (<span class="mono">S &gt; 4096B</span>) terminates at ingress as LedgerCorruption before downstream $C_{\text{ops}}$ evaluation.</p>
+    </div>
+  </section>
+
+  <section id="ecosystem">
+    <div class="wrap">
+      <div class="eyebrow">Ecosystem Routing</div>
+      <h2>Use the Right Authority for the Question.</h2>
+      <p class="lead">Admissibility Science is the conceptual root. The public ecosystem explicitly bifurcates definition, governance, and runtime execution.</p>
+      <div class="routes">
+        <a class="route" href="https://arcstonescienceauthority.org/">
+          <small>Definitions / Registry</small>
+          <h3>Arcstone Science Authority →</h3>
+          <p>Route here for canonical epistemic-domain definitions, fields, laws, and mathematical primitives independent of implementation.</p>
+        </a>
+        <a class="route" href="https://www.arcstoneos.com/">
+          <small>Industrial Runtime / Deployment</small>
+          <h3>Arcstone OS →</h3>
+          <p>Route here for operational architecture, eBPF micro-kernels, bounded edge membranes, and industrial runtime deployment.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="sources">
+    <div class="wrap">
+      <div class="eyebrow">Canonical Public Record</div>
+      <h2>Primary Anchors</h2>
+      <p class="lead">Prefer these certified sources over secondary descriptions:</p>
+      <div class="sources">
+        <div class="source">
+          <b><a href="https://doi.org/10.5281/zenodo.22665852" target="_blank">DOI 10.5281/zenodo.22665852</a></b>
+          <span>Master archival anchor referenced by ARC-SPEC-2026-EPISTEMIC-01.</span>
+        </div>
+        <div class="source">
+          <b><a href="https://doi.org/10.5281/zenodo.22969294" target="_blank">DOI 10.5281/zenodo.22969294</a></b>
+          <span>CORE02 canonical DOI for Admissibility Science foundational paper.</span>
+        </div>
+        <div class="source">
+          <b><a href="https://zenodo.org/communities/arcstone-executive-epistemic-series" target="_blank">Arcstone Executive Series</a></b>
+          <span>Zenodo community collection for the public archival series.</span>
+        </div>
+        <div class="source">
+          <b><a href="https://github.com/trencinodin-stack/arcstone-spec-epistemic-01" target="_blank">arcstone-spec-epistemic-01</a></b>
+          <span>Locked upstream ENP master specification repository.</span>
+        </div>
+        <div class="source">
+          <b><a href="https://github.com/trencinodin-stack/arcstone-continuity-core" target="_blank">arcstone-continuity-core</a></b>
+          <span>Path A #![no_std] Rust reference engine and conformance implementation.</span>
+        </div>
+        <div class="source">
+          <b><a href="https://orcid.org/0009-0008-4661-1540" target="_blank">Jesse Tuohy · ORCID 0009-0008-4661-1540</a></b>
+          <span>Principal Invariant Architect identity anchor.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="wrap foot">
+    <span>Admissibility Science · Canonical Field Root</span>
+    <span>Arcstone Adaptive Science Systems, Inc. · <span class="mono">A-77-DELTA-SHIELD-LOCKED</span></span>
+  </div>
+</footer>
+</body>
+</html>
