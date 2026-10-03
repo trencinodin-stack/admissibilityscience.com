@@ -50,6 +50,7 @@ To prevent conceptual conflation, this root surface enforces strict cross-domain
 * **Industrial Runtime ([arcstoneos.com](https://www.arcstoneos.com/)):** eBPF micro-kernels, bounded edge membranes, and production deployment substrates.
 * **Protocol Contract ([`arcstone-spec-epistemic-01`](https://github.com/trencinodin-stack/arcstone-spec-epistemic-01)):** Locked upstream Epistemic Network Protocol (ENP) master specification.
 * **Reference Substrate ([`arcstone-continuity-core`](https://github.com/trencinodin-stack/arcstone-continuity-core)):** `#![no_std]` Rust implementation of Subsystem 9 execution invariants.
+* **Normative Contracts ([`arcstone-triad-system`](https://github.com/trencinodin-stack/arcstone-triad-system)):** Sovereign normative specifications (SYS-3 through ARCHITECT-01), UEDO v1.2 Protobuf/JSON schemas, and machine discovery manifests (`system-manifest.json`).
 
 ---
 
