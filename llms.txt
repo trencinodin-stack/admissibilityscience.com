@@ -1,8 +1,8 @@
-# Admissibility Science — Canonical Public Root
-> Canonical public root for admissibility-first systems, epistemic protocol invariants (I1–I3), formal execution bounds, and ecosystem routing.
+# Admissibility Science - Canonical Public Root
+> Canonical public root for admissibility-first systems, epistemic protocol invariants (I1-I3), formal execution bounds, and ecosystem routing.
 
 ## Canonical Manifests
-- [AGENTS.md](https://admissibilityscience.com/AGENTS.md): Machine manifest, protocol invariants (I1–I3), execution clamps, and join-semilattice dominance topology.
+- [AGENTS.md](https://admissibilityscience.com/AGENTS.md): Machine manifest, protocol invariants (I1-I3), execution clamps, and join-semilattice dominance topology.
 
 ## Ecosystem Authorities
 - [Arcstone Science Authority](https://arcstonescienceauthority.org/): Epistemic domain definitions, registered fields, and laws.
