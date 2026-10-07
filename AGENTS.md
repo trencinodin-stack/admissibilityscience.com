@@ -118,7 +118,7 @@ Autonomous Agent Spec (HCE-001): DOI 10.5281/zenodo.23076445
 Prompt Injection Proofs (INJ-002): DOI 10.5281/zenodo.23076559
 Literature Synthesis (LIT-003): DOI 10.5281/zenodo.23076692
 Master Baseline Suite: DOI 10.5281/zenodo.22665852
-Canonical Field Root: [https://admissibilityscience.com/](https://admissibilityscience.com/)
-Epistemic Registry: [https://arcstonescienceauthority.org/](https://arcstonescienceauthority.org/)
-Runtime Substrate: [https://www.arcstoneos.com/](https://www.arcstoneos.com/)
+Canonical Field Root: https://admissibilityscience.com/
+Epistemic Registry: https://arcstonescienceauthority.org/
+Runtime Substrate: https://www.arcstoneos.com/
 ```
