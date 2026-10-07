@@ -1,0 +1,14 @@
+# Admissibility Science — Canonical Public Root
+> Canonical public root for admissibility-first systems, epistemic protocol invariants (I1–I3), formal execution bounds, and ecosystem routing.
+
+## Canonical Manifests
+- [AGENTS.md](https://admissibilityscience.com/AGENTS.md): Machine manifest, protocol invariants (I1–I3), execution clamps, and join-semilattice dominance topology.
+
+## Ecosystem Authorities
+- [Arcstone Science Authority](https://arcstonescienceauthority.org/): Epistemic domain definitions, registered fields, and laws.
+- [Arcstone OS](https://www.arcstoneos.com/): eBPF micro-kernels, bounded edge membranes, and industrial runtime deployment.
+
+## Specifications & Core Implementations
+- [Epistemic Network Protocol Spec](https://github.com/trencinodin-stack/arcstone-spec-epistemic-01): Upstream master specification (v1.3.1-LOCKED).
+- [Normative Triad Suite](https://github.com/trencinodin-stack/arcstone-triad-system): Sovereign normative specs, UEDO v1.2 schemas, and machine discovery contracts.
+- [Continuity Core Reference Implementation](https://github.com/trencinodin-stack/arcstone-continuity-core): Path A #![no_std] Rust execution engine.
