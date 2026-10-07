@@ -1,5 +1,18 @@
 User-agent: *
 Allow: /
 Allow: /AGENTS.md
+Allow: /llms.txt
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
 
 Sitemap: https://admissibilityscience.com/sitemap.xml
