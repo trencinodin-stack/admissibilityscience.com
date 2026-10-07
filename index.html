@@ -91,6 +91,7 @@
     .skip:focus { left: 12px; top: 12px; background: #fff; color: #000; padding: 10px; z-index: 99; }
     footer { border-top: 1px solid var(--line); padding: 28px 0 46px; color: var(--muted); font-size: .9rem; }
     .foot { display: flex; justify-content: space-between; gap: 24px; flex-wrap: wrap; }
+    .foot-links { display: flex; gap: 16px; }
     @media(max-width: 800px) {
       .hero, .routes, .sources, .invariants, .grid { grid-template-columns: 1fr; }
       .invariants .card:first-child { grid-column: auto; }
@@ -156,6 +157,8 @@
           { "@id": "https://admissibilityscience.com/#spec" },
           { "@id": "https://admissibilityscience.com/#triad" },
           { "@id": "https://admissibilityscience.com/#core" },
+          { "@type": "WebPage", "name": "AGENTS.md Manifest", "url": "https://admissibilityscience.com/AGENTS.md" },
+          { "@type": "WebPage", "name": "llms.txt Context", "url": "https://admissibilityscience.com/llms.txt" },
           { "@type": "WebSite", "name": "Arcstone Science Authority", "url": "https://arcstonescienceauthority.org/" },
           { "@type": "WebSite", "name": "Arcstone OS", "url": "https://www.arcstoneos.com/" }
         ]
@@ -206,6 +209,8 @@
       <a href="#formalism">Lattice</a>
       <a href="#ecosystem">Ecosystem</a>
       <a href="#sources">Corpus</a>
+      <a href="/AGENTS.md" class="mono">AGENTS.md</a>
+      <a href="/llms.txt" class="mono">llms.txt</a>
     </div>
   </nav>
 </header>
@@ -380,6 +385,10 @@
 <footer>
   <div class="wrap foot">
     <span>Admissibility Science · Canonical Field Root</span>
+    <div class="foot-links">
+      <a href="/AGENTS.md" class="mono">AGENTS.md</a>
+      <a href="/llms.txt" class="mono">llms.txt</a>
+    </div>
     <span>Arcstone Adaptive Science Systems, Inc. · <span class="mono">A-77-DELTA-SHIELD-LOCKED</span></span>
   </div>
 </footer>
