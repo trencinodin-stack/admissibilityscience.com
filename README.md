@@ -1,11 +1,12 @@
 # admissibilityscience.com — Canonical Root Repository
 
-> **Master Anchor:** `A-77-DELTA-SHIELD-LOCKED`  
-> **Sponsoring Entity:** Arcstone Adaptive Science Systems, Inc.  
-> **Principal Architect:** Jesse Tuohy ([ORCID: 0009-0008-4661-1540](https://orcid.org/0009-0008-4661-1540))  
-> **Master Suite DOI:** [10.5281/zenodo.22665852](https://doi.org/10.5281/zenodo.22665852)  
-> **Master Canonical Errata (ARC-ERR-2026-001):** [10.5281/zenodo.23069559](https://doi.org/10.5281/zenodo.23069559)  
-> **Foundational Field DOI (CORE02):** [10.5281/zenodo.22969294](https://doi.org/10.5281/zenodo.22969294)
+**Master Anchor:** `A-77-DELTA-SHIELD-LOCKED`  
+**Sponsoring Entity:** Arcstone Adaptive Science Systems, Inc.  
+**Principal Architect:** Jesse Tuohy ([ORCID: 0009-0008-4661-1540](https://orcid.org/0009-0008-4661-1540))  
+**Volume 1 Monograph DOI:** [10.5281/zenodo.22665852](https://doi.org/10.5281/zenodo.22665852)  
+**Volume 2 Monograph DOI:** [10.5281/zenodo.23371581](https://doi.org/10.5281/zenodo.23371581)  
+**Master Canonical Errata (ARC-ERR-2026-001):** [10.5281/zenodo.23069559](https://doi.org/10.5281/zenodo.23069559)  
+**Foundational Field DOI (CORE02):** [10.5281/zenodo.22969294](https://doi.org/10.5281/zenodo.22969294)  
 
 ---
 
@@ -13,13 +14,14 @@
 
 This repository contains the production code for **[admissibilityscience.com](https://admissibilityscience.com/)**, the canonical field root for Admissibility Science. 
 
-The site serves as a machine-first, dual-consumer routing and definition surface for human researchers, AI indexers, vector crawlers, and LLM agentic gateways. It establishes the mathematical axioms, runtime invariants ($I_1–I_3$), order-theoretic join-semilattice mechanics ($L, \sqcup$), and hardware clamps ($C_{\text{ops}} = 0$, $S_{\text{max}} \le 4096\text{B}$, $\tau_{\text{override}} \le 11.99\text{ms}$) governing pre-ingress proposal evaluation.
+The site serves as a machine-first, dual-consumer routing and definition surface for human researchers, AI indexers, vector crawlers, and LLM agentic gateways. It establishes the mathematical axioms, runtime invariants ($I_1–I_3$), order-theoretic join-semilattice mechanics ($L, \vee$), and hardware clamps ($C_{\text{ops}} = 0$, $S_{\text{max}} \le 4096\text{ B}$, $\tau_{\text{override}} \le 11.99\text{ ms}$) governing pre-ingress proposal evaluation.
 
 ---
 
 ## 📚 Primary Archival DOIs & Companion Specifications
 
-- **Master Baseline Anchor:** [DOI: 10.5281/zenodo.22665852](https://doi.org/10.5281/zenodo.22665852)
+- **Volume 1 Monograph (*INFORMATION PHYSICS*):** [DOI: 10.5281/zenodo.22665852](https://doi.org/10.5281/zenodo.22665852)
+- **Volume 2 Monograph (*SOVEREIGN SUBSTRATE ECONOMICS*):** [DOI: 10.5281/zenodo.23371581](https://doi.org/10.5281/zenodo.23371581)
 - **Master Canonical Errata (`ARC-ERR-2026-001`):** [DOI: 10.5281/zenodo.23069559](https://doi.org/10.5281/zenodo.23069559)
 - **Foundational Field Paper (`CORE02`):** [DOI: 10.5281/zenodo.22969294](https://doi.org/10.5281/zenodo.22969294)
 - **Autonomous Agent Systems Architecture Spec (`ARC-SPEC-AGENT-HCE-001`):** [DOI: 10.5281/zenodo.23076445](https://doi.org/10.5281/zenodo.23076445)
@@ -45,18 +47,19 @@ This site is engineered with zero framework overhead ($C_{\text{ops}} = 0$) and 
 
 To prevent conceptual conflation, this root surface enforces strict cross-domain separation:
 
-* **Field Root (`admissibilityscience.com`):** Pure theoretical discipline, mathematical axioms, and paper citations.
-* **Epistemic Registry ([arcstonescienceauthority.org](https://arcstonescienceauthority.org/)):** Registered fields, domain definitions, laws, and mathematical primitives.
-* **Industrial Runtime ([arcstoneos.com](https://www.arcstoneos.com/)):** eBPF micro-kernels, bounded edge membranes, and production deployment substrates.
-* **Protocol Contract ([`arcstone-spec-epistemic-01`](https://github.com/trencinodin-stack/arcstone-spec-epistemic-01)):** Locked upstream Epistemic Network Protocol (ENP) master specification.
-* **Reference Substrate ([`arcstone-continuity-core`](https://github.com/trencinodin-stack/arcstone-continuity-core)):** `#![no_std]` Rust implementation of Subsystem 9 execution invariants.
-* **Normative Contracts ([`arcstone-triad-system`](https://github.com/trencinodin-stack/arcstone-triad-system)):** Sovereign normative specifications (SYS-3 through ARCHITECT-01), UEDO v1.2 Protobuf/JSON schemas, and machine discovery manifests (`system-manifest.json`).
+- **Field Root (`admissibilityscience.com`):** Pure theoretical discipline, mathematical axioms, and paper citations.
+- **Epistemic Registry ([arcstonescienceauthority.org](https://arcstonescienceauthority.org/)):** Registered fields, domain definitions, laws, and mathematical primitives.
+- **Industrial Runtime ([arcstoneos.com](https://www.arcstoneos.com/)):** eBPF micro-kernels, bounded edge membranes, and production deployment substrates.
+- **Protocol Contract ([`arcstone-spec-epistemic-01`](https://github.com/trencinodin-stack/arcstone-spec-epistemic-01)):** Locked upstream Epistemic Network Protocol (ENP) master specification.
+- **Reference Substrate ([`arcstone-continuity-core`](https://github.com/trencinodin-stack/arcstone-continuity-core)):** `#![no_std]` Rust implementation of Subsystem 9 execution invariants.
+- **Execution Boundary ([`arcstone-mcp-sidecar`](https://github.com/trencinodin-stack/arcstone-mcp-sidecar)):** Reference downstream sidecar published on official MCP Registry enforcing $I_1–I_3$ safety invariants.
+- **Normative Contracts ([`arcstone-triad-system`](https://github.com/trencinodin-stack/arcstone-triad-system)):** Sovereign normative specifications (SYS-3 through ARCHITECT-01), UEDO v1.2 Protobuf/JSON schemas, and machine discovery manifests (`system-manifest.json`).
 
 ---
 
 ## Edge Deployment
 
 Deployed globally via **Cloudflare Pages**:
-* **Build Command:** *(none / static)*
-* **Build Output Directory:** `/`
-* **CDN Posture:** Sub-millisecond global DNS resolution with edge SSL acceleration.
+- **Build Command:** *(none / static)*
+- **Build Output Directory:** `/`
+- **CDN Posture:** Sub-millisecond global DNS resolution with edge SSL acceleration.
