@@ -30,7 +30,7 @@ The site serves as a machine-first, dual-consumer routing and definition surface
 
 ---
 
-## Repository Structure (4-File Surface)
+## Repository Structure (6-File Surface)
 
 This site is engineered with zero framework overhead ($C_{\text{ops}} = 0$) and zero dynamic build dependencies:
 
@@ -38,7 +38,9 @@ This site is engineered with zero framework overhead ($C_{\text{ops}} = 0$) and 
 | :--- | :--- |
 | **`index.html`** | Human presentation surface, dark-mode UI, and embedded Schema.org JSON-LD machine graph. |
 | **`AGENTS.md`** | Raw machine-readable specification and routing rules for AI agents, crawlers, and MCP clients. |
-| **`robots.txt`** | Web crawler permissions explicitly allowing indexers to crawl `/` and `/AGENTS.md`. |
+| **`llms.txt`** | Machine-native contextual summary for LLM agent reasoning graphs and crawlers. |
+| **`README.md`** | GitHub repository entry point and canonical architectural overview. |
+| **`robots.txt`** | Web crawler permissions explicitly allowing indexers to crawl `/`, `/AGENTS.md`, and `/llms.txt`. |
 | **`sitemap.xml`** | Standard XML indexing graph mapping canonical endpoints for rapid vector ingestion. |
 
 ---
