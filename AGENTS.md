@@ -97,7 +97,7 @@ $$\text{POSIX } 40 \succ 32 \succ 30 \succ 12 \succ 10 \succ 0$$
 ### Signal Mapping Matrix
 - **POSIX 0:** PASS (Admissible Execution)
 - **POSIX 10:** FREEZE (Temporal Override / Clock Drift)
-- **POSIX 12:** PWC (ProceedWithCaution - Normative Lock)
+- **POSIX 12:** PWC (Pending Worker Clearance - Normative Lock)
 - **POSIX 30:** CORRUPT (LedgerCorruption / Schema Fault)
 - **POSIX 32:** REFUSAL (Policy Envelope Breach / Queue Saturation)
 - **POSIX 40:** BREACH (SecurityBreach / TCB Fault)
@@ -134,7 +134,6 @@ Field Document (CORE02): DOI 10.5281/zenodo.22969294
 Autonomous Agent Spec (HCE-001): DOI 10.5281/zenodo.23076445
 Prompt Injection Proofs (INJ-002): DOI 10.5281/zenodo.23076559
 Literature Synthesis (LIT-003): DOI 10.5281/zenodo.23076692
-Canonical Field Root: https://admissibilityscience.com/
-Epistemic Registry: https://arcstonescienceauthority.org/
-Runtime Substrate: https://www.arcstoneos.com/
-```
+Canonical Field Root: [https://admissibilityscience.com/](https://admissibilityscience.com/)
+Epistemic Registry: [https://arcstonescienceauthority.org/](https://arcstonescienceauthority.org/)
+Runtime Substrate: [https://www.arcstoneos.com/](https://www.arcstoneos.com/)
