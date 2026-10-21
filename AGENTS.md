@@ -94,14 +94,16 @@ Any agent extracting content, generating code, or auditing systems adjacent to A
 Substrate governance is formalized via posetal category theory. Pre-ingress severity accumulation takes place within a 5-element bounded join-semilattice $L = \{\bot, \ell_1, \ell_2, \ell_3, \top\}$, mapped to the 6-tier operational dominance hierarchy $E = \{0, 10, 12, 30, 32, 40\}$ via a faithful, order-preserving, and finitely coproduct-preserving covariant functor $\mathbf{\Phi} : \mathbf{L} \to \mathbf{E}$.
 
 ### Monotonic Translation Functor Mappings
-- **$\mathbf{\Phi}(\bot) = 0$:** PASS (Admissible Execution) — POSIX Exit 0
-- **$\mathbf{\Phi}(\ell_1) = 12$:** PWC (Pending Worker Clearance) — POSIX Exit 12 *(Normative Lock)*
-- **$\mathbf{\Phi}(\ell_2) = 30$:** CORRUPT (LedgerCorruption / Schema Fault) — POSIX Exit 30
-- **$\mathbf{\Phi}(\ell_3) = 32$:** REFUSAL (Policy Envelope Breach) — POSIX Exit 32
-- **$\mathbf{\Phi}(\top) = 40$:** BREACH (SecurityBreach / TCB Fault) — POSIX Exit 40
+
+- **Φ(⊥) = 0:** PASS (Admissible Execution) — POSIX Exit 0
+- **Φ(ℓ₁) = 12:** PWC (Pending Worker Clearance) — POSIX Exit 12 *(Normative Lock)*
+- **Φ(ℓ₂) = 30:** CORRUPT (LedgerCorruption / Schema Fault) — POSIX Exit 30
+- **Φ(ℓ₃) = 32:** REFUSAL (Policy Envelope Breach) — POSIX Exit 32
+- **Φ(⊤) = 40:** BREACH (SecurityBreach / TCB Fault) — POSIX Exit 40
 
 ### Internal Endofunctorial Yield Dynamics
-- **POSIX 10 (FREEZE):** Operates strictly as an internal endofunctorial rate-limiting yield ($\tau_{\text{override}} \le 11.99 \text{ ms}$) within execution category $\mathbf{E}$, sitting strictly outside the essential image $\operatorname{Im}(\mathbf{\Phi}) = \{0, 12, 30, 32, 40\}$.
+
+- **POSIX 10 (FREEZE):** Operates strictly as an internal endofunctorial rate-limiting yield (τ_override ≤ 11.99 ms) within execution category E, sitting strictly outside the essential image Im(Φ) = {0, 12, 30, 32, 40}.
 
 ---
 
