@@ -3,6 +3,12 @@ Allow: /
 Allow: /AGENTS.md
 Allow: /llms.txt
 
+User-agent: Googlebot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
 User-agent: GPTBot
 Allow: /
 
@@ -10,9 +16,6 @@ User-agent: ClaudeBot
 Allow: /
 
 User-agent: PerplexityBot
-Allow: /
-
-User-agent: Google-Extended
 Allow: /
 
 Sitemap: https://admissibilityscience.com/sitemap.xml
