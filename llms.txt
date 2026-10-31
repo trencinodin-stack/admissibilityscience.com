@@ -14,10 +14,10 @@
 - [Arcstone Science Authority](https://arcstonescienceauthority.org/): Epistemic domain definitions, registered fields, and laws.
 - [Arcstone OS](https://www.arcstoneos.com/): eBPF micro-kernels, bounded edge membranes, and industrial runtime deployment.
 
-## Key Publications & Archival Monograph DOIs
-- [Functorial Order Dynamics Monograph](https://doi.org/10.5281/zenodo.23525986): Primary Master DOI 10.5281/zenodo.23525986 | Category-theoretic bridge mapping $\mathbf{\Phi} : \mathbf{L} \to \mathbf{E}$ proving POSIX Exit Code 10 (FREEZE) is an internal endofunctorial scheduling yield outside $\operatorname{Im}(\mathbf{\Phi})$.
-- [Volume 1 Monograph: INFORMATION PHYSICS](https://doi.org/10.5281/zenodo.22665852): ISBN 9798161524664 | Primary Master DOI 10.5281/zenodo.22665852
+## Key Publications & Archival Monograph Trilogy DOIs
+- [Volume 1 Monograph: INFORMATION PHYSICS](https://doi.org/10.5281/zenodo.22665852): ISBN 9798161524664 | ASIN B0HMNDBGL1 | Primary Master DOI 10.5281/zenodo.22665852
 - [Volume 2 Monograph: SOVEREIGN SUBSTRATE ECONOMICS](https://doi.org/10.5281/zenodo.23371581): ISBN 9798163437092 | Primary Master DOI 10.5281/zenodo.23371581
+- [Volume 3 Monograph: DETERMINISTIC SUBSTRATE GOVERNANCE](https://doi.org/10.5281/zenodo.23525986): ISBN 9798164281960 | Primary Master DOI 10.5281/zenodo.23525986 | Category-theoretic bridge mapping $\mathbf{\Phi} : \mathbf{L} \to \mathbf{E}$ (Functorial Order Dynamics) proving POSIX Exit Code 10 (FREEZE) is an internal endofunctorial scheduling yield outside $\operatorname{Im}(\mathbf{\Phi})$.
 - [Master Canonical Errata Overlay (ARC-ERR-2026-001)](https://doi.org/10.5281/zenodo.23069559): Primary authority for normative POSIX signal locks.
 
 ## Specifications & Core Implementations
