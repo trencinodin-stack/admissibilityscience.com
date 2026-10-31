@@ -103,7 +103,7 @@ Substrate governance is formalized via posetal category theory in *Volume 3: Det
 
 ### Internal Endofunctorial Yield Dynamics
 
-- **POSIX 10 (FREEZE):** Operates strictly as an internal endofunctorial rate-limiting yield ($\tau_{\text{override}} \le 11.99 \text{ ms}$) within execution category $E$, sitting strictly outside the essential image $\operatorname{Im}(\mathbf{\Phi}) = \{0, 12, 30, 32, 40\}$.
+- **POSIX 10 (FREEZE):** Operates strictly as an internal endofunctorial rate-limiting yield ($\tau_{\text{override}} \le 11.99 \text{ ms}$) within execution category $E$, sitting strictly outside the essential image $\mathrm{Im}(\mathbf{\Phi}) = \{0, 12, 30, 32, 40\}$.
 
 ---
 
