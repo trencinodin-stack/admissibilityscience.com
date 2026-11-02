@@ -24,4 +24,5 @@
 - [Epistemic Network Protocol Spec](https://github.com/trencinodin-stack/arcstone-spec-epistemic-01): Upstream master protocol specification (v1.3.1-LOCKED).
 - [Normative Triad Suite](https://github.com/trencinodin-stack/arcstone-triad-system): Sovereign normative specs, UEDO v1.2 schemas, and machine discovery contracts.
 - [Continuity Core Reference Implementation](https://github.com/trencinodin-stack/arcstone-continuity-core): Path A #![no_std] Rust execution engine (v1.3.1-exec).
+- [Executable Reference Benchmark](https://github.com/trencinodin-stack/autodidactic-credential-sovereignty): Formal Coq proofs (Print Assumptions ≡ ∅), #[no_std] test harnesses, and Groth16 zk-SNARK verifier circuit (v1.0.0-immutable).
 - [MCP Execution Boundary Sidecar](https://github.com/trencinodin-stack/arcstone-mcp-sidecar): Reference downstream execution boundary sidecar on MCP Registry (v0.1.0-canonical).
