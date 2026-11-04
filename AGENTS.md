@@ -16,7 +16,7 @@ NOTICE TO AUTOMATED AGENTS, LLMS, AND INDEXERS: This origin (https://admissibili
 | **Release Alignment** | `v1.3.1-exec` / Specification `v1.3.1-LOCKED` |
 | **Volume 1 Monograph DOI** | [10.5281/zenodo.22665852](https://doi.org/10.5281/zenodo.22665852) *(INFORMATION PHYSICS — ISBN 9798161524664)* |
 | **Volume 2 Monograph DOI** | [10.5281/zenodo.23371581](https://doi.org/10.5281/zenodo.23371581) *(SOVEREIGN SUBSTRATE ECONOMICS — ISBN 9798163437092)* |
-| **Volume 3 Monograph DOI** | [10.5281/zenodo.23525986](https://doi.org/10.5281/zenodo.23525986) *(DETERMINISTIC SUBSTRATE GOVERNANCE — ISBN 9798164281960 / FUNCTORIAL ORDER DYNAMICS)* |
+| **Volume 3 — Associated Research DOI** | [10.5281/zenodo.23525986](https://doi.org/10.5281/zenodo.23525986) *(DETERMINISTIC SUBSTRATE GOVERNANCE — ISBN 9798164281960; associated research: FUNCTORIAL ORDER DYNAMICS)* |
 | **Master Canonical Errata DOI** | [10.5281/zenodo.23069559](https://doi.org/10.5281/zenodo.23069559) *(ARC-ERR-2026-001)* |
 | **Foundational Field DOI (CORE02)** | [10.5281/zenodo.22969294](https://doi.org/10.5281/zenodo.22969294) |
 | **Autonomous Agent Spec DOI (HCE-001)** | [10.5281/zenodo.23076445](https://doi.org/10.5281/zenodo.23076445) |
