@@ -4,10 +4,19 @@
 **Sponsoring Entity:** Arcstone Adaptive Science Systems, Inc.  
 **Principal Architect:** Jesse Tuohy ([ORCID: 0009-0008-4661-1540](https://orcid.org/0009-0008-4661-1540))  
 **Functorial Order Dynamics Monograph DOI:** [10.5281/zenodo.23525986](https://doi.org/10.5281/zenodo.23525986)  
-**Volume 1 Monograph DOI:** [10.5281/zenodo.22665852](https://doi.org/10.5281/zenodo.22665852)  
-**Volume 2 Monograph DOI:** [10.5281/zenodo.23371581](https://doi.org/10.5281/zenodo.23371581)  
+
+**Volume 1 — INFORMATION PHYSICS:**  
+[Amazon Book](https://www.amazon.com/dp/B0HMNNZQTV) — ISBN-13: `9798161524664` — Kindle ASIN: `B0HMNDBGL1` — Paperback ASIN: `B0HMNNZQTV` — Associated Research DOI: [10.5281/zenodo.22665852](https://doi.org/10.5281/zenodo.22665852)
+
+**Volume 2 — SOVEREIGN SUBSTRATE ECONOMICS:**  
+[Amazon Book](https://www.amazon.com/dp/B0HNHF3QGV) — ISBN-13: `9798163437092` — Kindle ASIN: `B0H275L5JJ` — Paperback ASIN: `B0HNHF3QGV` — Associated Research DOI: [10.5281/zenodo.23371581](https://doi.org/10.5281/zenodo.23371581)
+
+**Volume 3 — DETERMINISTIC SUBSTRATE GOVERNANCE:**  
+[Amazon Book](https://www.amazon.com/dp/B0HL43F4VN) — ISBN-13: `9798164281960` — Kindle ASIN: `B0HL43F4VN` — Paperback ASIN: `B0HNV43VWP` — Associated Research DOI: [10.5281/zenodo.23525986](https://doi.org/10.5281/zenodo.23525986)
+
 **Master Canonical Errata (ARC-ERR-2026-001):** [10.5281/zenodo.23069559](https://doi.org/10.5281/zenodo.23069559)  
-**Foundational Field DOI (CORE02):** [10.5281/zenodo.22969294](https://doi.org/10.5281/zenodo.22969294)  
+**Foundational Field DOI (CORE02):** [10.5281/zenodo.22969294](https://doi.org/10.5281/zenodo.22969294)
+
 
 ---
 
