@@ -3,6 +3,7 @@
 **Master Anchor:** `A-77-DELTA-SHIELD-LOCKED`  
 **Sponsoring Entity:** Arcstone Adaptive Science Systems, Inc.  
 **Principal Architect:** Jesse Tuohy ([ORCID: 0009-0008-4661-1540](https://orcid.org/0009-0008-4661-1540))  
+**Primary DAE Manuscript DOI:** [10.5281/zenodo.23967282](https://doi.org/10.5281/zenodo.23967282) *(ARC-PUB-2026-DAE-01)*  
 **Functorial Order Dynamics Monograph DOI:** [10.5281/zenodo.23525986](https://doi.org/10.5281/zenodo.23525986)  
 
 **Volume 1 — INFORMATION PHYSICS:**  
@@ -17,7 +18,6 @@
 **Master Canonical Errata (ARC-ERR-2026-001):** [10.5281/zenodo.23069559](https://doi.org/10.5281/zenodo.23069559)  
 **Foundational Field DOI (CORE02):** [10.5281/zenodo.22969294](https://doi.org/10.5281/zenodo.22969294)
 
-
 ---
 
 ## System Overview
@@ -30,6 +30,7 @@ The site serves as a machine-first, dual-consumer routing and definition surface
 
 ## 📚 Primary Archival DOIs & Companion Specifications
 
+- **Deterministic Admissibility Engineering (*DAE MANUSCRIPT*):** [DOI: 10.5281/zenodo.23967282](https://doi.org/10.5281/zenodo.23967282) (`ARC-PUB-2026-DAE-01`)
 - **Functorial Order Dynamics Monograph (*CATEGORY-THEORETIC BRIDGE*):** [DOI: 10.5281/zenodo.23525986](https://doi.org/10.5281/zenodo.23525986)
 - **Volume 1 Monograph (*INFORMATION PHYSICS*):** [DOI: 10.5281/zenodo.22665852](https://doi.org/10.5281/zenodo.22665852)
 - **Volume 2 Monograph (*SOVEREIGN SUBSTRATE ECONOMICS*):** [DOI: 10.5281/zenodo.23371581](https://doi.org/10.5281/zenodo.23371581)
@@ -64,7 +65,7 @@ To prevent conceptual conflation, this root surface enforces strict cross-domain
 - **Epistemic Registry ([arcstonescienceauthority.org](https://arcstonescienceauthority.org/)):** Registered fields, domain definitions, laws, and mathematical primitives.
 - **Industrial Runtime ([arcstoneos.com](https://www.arcstoneos.com/)):** eBPF micro-kernels, bounded edge membranes, and production deployment substrates.
 - **Protocol Contract ([`arcstone-spec-epistemic-01`](https://github.com/trencinodin-stack/arcstone-spec-epistemic-01)):** Locked upstream Epistemic Network Protocol (ENP) master specification.
-- **Reference Substrate ([`arcstone-continuity-core`](https://github.com/trencinodin-stack/arcstone-continuity-core)):** `#![no_std]` Rust implementation of Subsystem 9 execution invariants.
+- **Reference Substrate ([`arcstone-continuity-core`](https://github.com/trencinodin-stack/arcstone-continuity-core)):** `#[no_std]` Rust implementation of Subsystem 9 execution invariants.
 - **Executable Benchmark ([`autodidactic-credential-sovereignty`](https://github.com/trencinodin-stack/autodidactic-credential-sovereignty)):** Autonomous assessment substrate mechanizing empty-axiom Coq verification, `#[no_std]` bare-metal test harnesses, and Groth16 zk-SNARK circuits.
 - **Execution Boundary ([`arcstone-mcp-sidecar`](https://github.com/trencinodin-stack/arcstone-mcp-sidecar)):** Reference downstream sidecar published on official MCP Registry enforcing $I_1–I_3$ safety invariants.
 - **Normative Contracts ([`arcstone-triad-system`](https://github.com/trencinodin-stack/arcstone-triad-system)):** Sovereign normative specifications (SYS-3 through ARCHITECT-01), UEDO v1.2 Protobuf/JSON schemas, and machine discovery manifests (`system-manifest.json`).
