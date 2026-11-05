@@ -22,6 +22,7 @@
 - **Volume 3 — DETERMINISTIC SUBSTRATE GOVERNANCE:** [Amazon Book](https://www.amazon.com/dp/B0HL43F4VN) | ISBN-13: `9798164281960` | Kindle ASIN: `B0HL43F4VN` | Paperback ASIN: `B0HNV43VWP` | Associated Research: *Functorial Order Dynamics* | Associated Research DOI: [10.5281/zenodo.23525986](https://doi.org/10.5281/zenodo.23525986)
 
 - [Master Canonical Errata Overlay (ARC-ERR-2026-001)](https://doi.org/10.5281/zenodo.23069559): Primary authority for normative POSIX signal locks.
+- **Primary DAE Manuscript (ARC-PUB-2026-DAE-01):** [Deterministic Admissibility Engineering: Mechanized Type Theory, Bare-Metal Clamps, and the Regeneration Gap](https://doi.org/10.5281/zenodo.23967282) | Formal microarchitectural bridge, empty-axiom Coq proofs, and bare-metal clamps | Primary Version DOI: [10.5281/zenodo.23967282](https://doi.org/10.5281/zenodo.23967282)
 
 ## Specifications & Core Implementations
 - [Epistemic Network Protocol Spec](https://github.com/trencinodin-stack/arcstone-spec-epistemic-01): Upstream master protocol specification (v1.3.1-LOCKED).
