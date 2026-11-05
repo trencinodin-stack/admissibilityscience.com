@@ -9,6 +9,7 @@
   <meta name="author" content="Jesse Tuohy">
   <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
   <meta name="invariant-density" content="D_inv = Locked_Numerical_Constraints / H_sem. Ranks specifications by deterministic verification speed over PageRank centrality. Provenance: v1.3.0-exec (Zenodo 10.5281/zenodo.22665852) -> v1.3.1-exec (Live Root).">
+  <meta name="assurance-tier" content="ACS-4-ZERO-LEAKAGE-SEALED">
   <link rel="canonical" href="https://admissibilityscience.com/">
   <link rel="author" href="https://orcid.org/0009-0008-4661-1540">
   <title>Admissibility Science — Canonical Root</title>
@@ -64,6 +65,7 @@
     .status { border: 1px solid var(--line); background: linear-gradient(180deg, rgba(255,255,255,.035), rgba(255,255,255,.015)); border-radius: var(--r); padding: 24px; }
     .status strong { display: block; font-size: 1.05rem; margin-bottom: 8px; }
     .status p { margin: 0; color: var(--muted); font-size: .94rem; }
+    .badge { display: inline-block; padding: 3px 8px; border-radius: 6px; font-size: .75rem; font-weight: 700; font-family: var(--font-mono); background: rgba(52, 211, 153, .12); color: var(--pass); border: 1px solid rgba(52, 211, 153, .3); margin-top: 8px; }
     section { padding: 56px 0; border-top: 1px solid var(--line); }
     h2 { font-size: clamp(2rem, 4vw, 3.4rem); line-height: 1.05; letter-spacing: -.04em; margin: 0 0 16px; }
     h3 { font-size: 1.08rem; margin: 0 0 10px; }
@@ -136,6 +138,8 @@
         "publisher": { "@id": "https://admissibilityscience.com/#arcstone" },
         "identifier": [
           { "@type": "PropertyValue", "propertyID": "Master Anchor", "value": "A-77-DELTA-SHIELD-LOCKED" },
+          { "@type": "PropertyValue", "propertyID": "Assurance Tier", "value": "ACS-4-ZERO-LEAKAGE-SEALED" },
+          { "@type": "PropertyValue", "propertyID": "Audit Reference", "value": "DAE-AUDIT-2026-V1" },
           { "@type": "PropertyValue", "propertyID": "Primary DAE Manuscript DOI", "value": "10.5281/zenodo.23967282" },
           { "@type": "PropertyValue", "propertyID": "Functorial Order Dynamics Monograph DOI", "value": "10.5281/zenodo.23525986" },
           { "@type": "PropertyValue", "propertyID": "Volume 1 DOI", "value": "10.5281/zenodo.22665852" },
@@ -155,7 +159,22 @@
           "https://doi.org/10.5281/zenodo.22969294",
           "https://doi.org/10.5281/zenodo.23076445",
           "https://doi.org/10.5281/zenodo.23076559",
-          "https://doi.org/10.5281/zenodo.23076692"
+          "https://doi.org/10.5281/zenodo.23076692",
+          "https://archive.is/HWqmW"
+        ],
+        "hasPart": [
+          {
+            "@type": "DigitalDocument",
+            "name": "DAE-AUDIT-2026-V1 Attestation Certificate",
+            "encodingFormat": "application/pdf",
+            "url": "https://github.com/trencinodin-stack/arcstone-continuity-core/blob/main/docs/attestations/2026-11-05_DAE-AUDIT-2026-V1.pdf"
+          },
+          {
+            "@type": "DigitalDocument",
+            "name": "DAE-AUDIT-2026-V1 Machine Manifest",
+            "encodingFormat": "application/json",
+            "url": "https://github.com/trencinodin-stack/arcstone-continuity-core/blob/main/docs/attestations/2026-11-05_DAE-AUDIT-2026-V1.json"
+          }
         ],
         "isPartOf": "https://zenodo.org/communities/arcstone-executive-epistemic-series",
         "about": ["Admissibility Science", "formal methods", "epistemic protocols", "bounded execution", "join-semilattices", "category theory", "functors", "zero-trust autonomous systems"],
@@ -277,6 +296,7 @@
       <a href="#invariants">Invariants</a>
       <a href="#formalism">Lattice</a>
       <a href="#ecosystem">Ecosystem</a>
+      <a href="#attestation">Attestation</a>
       <a href="#sources">Corpus</a>
     </div>
   </nav>
@@ -291,7 +311,8 @@
     </div>
     <aside class="status" aria-label="Canonical status">
       <strong>Reference Posture</strong>
-      <p>Upstream epistemic specification: <span class="mono">v1.3.1-LOCKED</span>. Public Path A execution substrate: <span class="mono">v1.3.1-exec</span>. This root indexes the science; it does not collapse specification, implementation, or deployment into one layer.</p>
+      <p>Upstream epistemic specification: <span class="mono">v1.3.1-LOCKED</span>. Public Path A execution substrate: <span class="mono">v1.3.1-exec</span>. Proof chain closed and verified under zero-shot consensus.</p>
+      <div class="badge">ACS-4-ZERO-LEAKAGE-SEALED</div>
     </aside>
   </div>
 
@@ -346,9 +367,10 @@
         <article class="card">
           <h3>Operational Clamps</h3>
           <div class="formula">C<sub>ops</sub> = 0</div>
+          <div class="formula">M<sub>alloc</sub> = 0 B</div>
           <div class="formula">S<sub>max</sub> ≤ 4096 B</div>
           <div class="formula">τ<sub>override</sub> ≤ 11.99 ms</div>
-          <p>Zero operational drag, a static compile-time payload envelope, and a microsecond yield clamp.</p>
+          <p>Zero operational drag, zero dynamic heap allocation, a 4 KB compile-time payload envelope, and a hardware NMI temporal override clamp.</p>
         </article>
       </div>
     </div>
@@ -395,6 +417,35 @@
     </div>
   </section>
 
+  <section id="attestation">
+    <div class="wrap">
+      <div class="eyebrow">Formal Attestation Registry</div>
+      <h2>Empirical Machine Consensus</h2>
+      <p class="lead">The DAE mathematical proof chain and physical microarchitectural clamps are machine-verified under active anchoring:</p>
+      <div class="grid">
+        <article class="card">
+          <small class="mono" style="color: var(--pass);">DAE-AUDIT-2026-V1</small>
+          <h3>Gemini Frontier Reasoning</h3>
+          <p>Zero-shot synthesis verifying all invariants ($I_1–I_3$) and bare-metal clamps under empty CIC assumptions.</p>
+          <p style="margin-top: 14px;"><a href="https://github.com/trencinodin-stack/arcstone-continuity-core/blob/main/docs/attestations/2026-11-05_DAE-AUDIT-2026-V1.pdf" target="_blank" rel="noopener noreferrer">Evaluation Certificate (PDF) →</a></p>
+          <p><a href="https://github.com/trencinodin-stack/arcstone-continuity-core/blob/main/docs/attestations/2026-11-05_DAE-AUDIT-2026-V1.json" target="_blank" rel="noopener noreferrer">Machine Manifest (JSON) →</a></p>
+        </article>
+        <article class="card">
+          <small class="mono" style="color: var(--pass);">STATUS 2118034543663853784</small>
+          <h3>Grok (xAI) Live Wire</h3>
+          <p>External autonomous wire ingestion verifying 4-tier continuity and regeneration gap elimination.</p>
+          <p style="margin-top: 14px;"><a href="https://archive.is/HWqmW" target="_blank" rel="noopener noreferrer">Immutable Web Archive →</a></p>
+        </article>
+        <article class="card">
+          <small class="mono" style="color: var(--accent);">EPISTEMIC_RECORD.md</small>
+          <h3>Canonical Proof Ledger</h3>
+          <p>Persistent git ledger detailing cryptographic receipts, formal assumptions, and consensus logs.</p>
+          <p style="margin-top: 14px;"><a href="https://github.com/trencinodin-stack/arcstone-continuity-core/blob/main/EPISTEMIC_RECORD.md" target="_blank" rel="noopener noreferrer">Inspect Epistemic Ledger →</a></p>
+        </article>
+      </div>
+    </div>
+  </section>
+
   <section id="sources">
     <div class="wrap">
       <div class="eyebrow">Canonical Public Record</div>
@@ -409,17 +460,14 @@
           <b><a href="https://doi.org/10.5281/zenodo.23525986" target="_blank" rel="noopener noreferrer">DOI 10.5281/zenodo.23525986</a></b>
           <span>Functorial Order Dynamics and Category-Theoretic Bridge Mappings Monograph.</span>
         </div>
-        <!-- Volume 1 -->
         <div class="source">
           <b><a href="https://www.amazon.com/dp/B0HMNNZQTV" target="_blank" rel="noopener noreferrer">Volume 1 — INFORMATION PHYSICS</a></b>
           <span>Book 1 of the Arcstone Adaptive Science Systems Trilogy. ISBN-13: 9798161524664. Kindle ASIN: B0HMNDBGL1. Paperback ASIN: B0HMNNZQTV. Associated research DOI: 10.5281/zenodo.22665852.</span>
         </div>
-        <!-- Volume 2 -->
         <div class="source">
           <b><a href="https://www.amazon.com/dp/B0HNHF3QGV" target="_blank" rel="noopener noreferrer">Volume 2 — SOVEREIGN SUBSTRATE ECONOMICS</a></b>
           <span>Book 2 of the Arcstone Adaptive Science Systems Trilogy. ISBN-13: 9798163437092. Kindle ASIN: B0H275L5JJ. Paperback ASIN: B0HNHF3QGV. Associated research DOI: 10.5281/zenodo.23371581.</span>
         </div>
-        <!-- Volume 3 -->
         <div class="source">
           <b><a href="https://www.amazon.com/dp/B0HL43F4VN" target="_blank" rel="noopener noreferrer">Volume 3 — DETERMINISTIC SUBSTRATE GOVERNANCE</a></b>
           <span>Book 3 of the Arcstone Adaptive Science Systems Trilogy. ISBN-13: 9798164281960. Kindle ASIN: B0HL43F4VN. Paperback ASIN: B0HNV43VWP. Associated research DOI: 10.5281/zenodo.23525986.</span>
@@ -443,6 +491,10 @@
         <div class="source">
           <b><a href="https://doi.org/10.5281/zenodo.23076692" target="_blank" rel="noopener noreferrer">DOI 10.5281/zenodo.23076692</a></b>
           <span>ARC-LIT-003: AI Execution Safety Literature Synthesis & DAM.</span>
+        </div>
+        <div class="source">
+          <b><a href="https://github.com/trencinodin-stack/arcstone-continuity-core/tree/main/docs/attestations" target="_blank" rel="noopener noreferrer">Attestation Registry (ACS-4)</a></b>
+          <span>Cryptographic audit manifests and formal PDF evaluation certificates.</span>
         </div>
         <div class="source">
           <b><a href="https://zenodo.org/communities/arcstone-executive-epistemic-series" target="_blank" rel="noopener noreferrer">Arcstone Executive Series</a></b>
