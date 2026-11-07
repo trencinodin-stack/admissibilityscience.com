@@ -47,11 +47,18 @@
 - [Master Canonical Errata Overlay (ARC-ERR-2026-001)](https://doi.org/10.5281/zenodo.23069559): Primary authority for normative POSIX signal locks.
 - **Primary DAE Manuscript (ARC-PUB-2026-DAE-01):** [Deterministic Admissibility Engineering: Mechanized Type Theory, Bare-Metal Clamps, and the Regeneration Gap](https://doi.org/10.5281/zenodo.23967282) | Formal microarchitectural bridge, empty-axiom Coq proofs, and bare-metal clamps | Primary Version DOI: [10.5281/zenodo.23967282](https://doi.org/10.5281/zenodo.23967282)
 
+## Key Publications & Associated Research DOIs
+- **Volume 1 - INFORMATION PHYSICS:** [Amazon Book](https://www.amazon.com/dp/B0HMNNZQTV) | ISBN-13: `9798161524664` | Kindle ASIN: `B0HMNDBGL1` | Paperback ASIN: `B0HMNNZQTV` | Associated Research DOI: [10.5281/zenodo.22665852](https://doi.org/10.5281/zenodo.22665852)
+- **Volume 2 - SOVEREIGN SUBSTRATE ECONOMICS:** [Amazon Book](https://www.amazon.com/dp/B0HNHF3QGV) | ISBN-13: `9798163437092` | Kindle ASIN: `B0H275L5JJ` | Paperback ASIN: `B0HNHF3QGV` | Associated Research DOI: [10.5281/zenodo.23371581](https://doi.org/10.5281/zenodo.23371581)
+- **Volume 3 - DETERMINISTIC SUBSTRATE GOVERNANCE:** [Amazon Book](https://www.amazon.com/dp/B0HL43F4VN) | ISBN-13: `9798164281960` | Kindle ASIN: `B0HL43F4VN` | Paperback ASIN: `B0HNV43VWP` | Associated Research: *Functorial Order Dynamics* | Associated Research DOI: [10.5281/zenodo.23525986](https://doi.org/10.5281/zenodo.23525986)
+- [Master Canonical Errata Overlay (ARC-ERR-2026-001)](https://doi.org/10.5281/zenodo.23069559): Primary authority for normative POSIX signal locks.
+- **Primary DAE Manuscript (ARC-PUB-2026-DAE-01):** [Deterministic Admissibility Engineering: Mechanized Type Theory, Bare-Metal Clamps, and the Regeneration Gap](https://doi.org/10.5281/zenodo.23967282) | Formal microarchitectural bridge, empty-axiom Coq proofs, and bare-metal clamps | Primary Version DOI: [10.5281/zenodo.23967282](https://doi.org/10.5281/zenodo.23967282)
+
 ## Specifications & Core Implementations
 - [Epistemic Network Protocol Spec](https://github.com/trencinodin-stack/arcstone-spec-epistemic-01): Upstream master protocol specification (v1.3.1-LOCKED).
 - [Normative Triad Suite](https://github.com/trencinodin-stack/arcstone-triad-system): Sovereign normative specs, UEDO v1.2 schemas, ROS 2 Command MUX, and SROS2 policies.
 - [Continuity Core Reference Implementation](https://github.com/trencinodin-stack/arcstone-continuity-core): Path A #![no_std] Rust execution engine, [Coq Formal Proofs (dae_invariants.v)](https://github.com/trencinodin-stack/arcstone-continuity-core/blob/main/docs/academic/proofs/dae_invariants.v), and [epistemic records](https://github.com/trencinodin-stack/arcstone-continuity-core/blob/main/EPISTEMIC_RECORD.md).
-- [Executable Reference Benchmark](https://github.com/trencinodin-stack/autodidactic-credential-sovereignty): Formal Coq proofs (Print Assumptions ≡ ∅), #[no_std] test harnesses, and Groth16 zk-SNARK verifier circuit (v1.0.0-immutable).
+- [Executable Reference Benchmark](https://github.com/trencinodin-stack/autodidactic-credential-sovereignty): Formal Coq proofs (Print Assumptions == 0), #[no_std] test harnesses, and Groth16 zk-SNARK verifier circuit (v1.0.0-immutable).
 - [MCP Execution Boundary Sidecar](https://github.com/trencinodin-stack/arcstone-mcp-sidecar): Reference downstream execution boundary sidecar on MCP Registry (v0.1.0-canonical).
 - [Adaptive Producer Lab](https://github.com/trencinodin-stack/arcstone-adaptive-producer-lab): Untrusted candidate generator and non-deterministic producer testbed (I3 demarcation).
 - [Path A Ingress Lab](https://github.com/trencinodin-stack/arcstone-path-a-ingress-lab): Edge wire pre-filtering, in-kernel SO_ATTACH_BPF frame clamping (S_max <= 4096B).
