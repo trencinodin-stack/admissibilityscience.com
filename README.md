@@ -5,6 +5,7 @@
 **Sponsoring Entity:** Arcstone Adaptive Science Systems, Inc.  
 **Principal Architect:** Jesse Tuohy ([ORCID: 0009-0008-4661-1540](https://orcid.org/0009-0008-4661-1540))  
 **Primary DAE Manuscript DOI:** [10.5281/zenodo.23967282](https://doi.org/10.5281/zenodo.23967282) *(ARC-PUB-2026-DAE-01)*  
+**Phase 8 Monograph DOI:** [10.5281/zenodo.24041851](https://doi.org/10.5281/zenodo.24041851) *(ARC-SPEC-2026-DPP-01 — Domain Projection Paradigm)*  
 **Functorial Order Dynamics Monograph DOI:** [10.5281/zenodo.23525986](https://doi.org/10.5281/zenodo.23525986)  
 
 **Volume 1 — INFORMATION PHYSICS:**  
@@ -45,6 +46,7 @@ Canonical proof ledger maintained at [`arcstone-continuity-core/EPISTEMIC_RECORD
 ## 📚 Primary Archival DOIs & Companion Specifications
 
 - **Deterministic Admissibility Engineering (*DAE MANUSCRIPT*):** [DOI: 10.5281/zenodo.23967282](https://doi.org/10.5281/zenodo.23967282) (`ARC-PUB-2026-DAE-01`)
+- **Phase 8 Domain Projection Paradigm Monograph:** [DOI: 10.5281/zenodo.24041851](https://doi.org/10.5281/zenodo.24041851) (`ARC-SPEC-2026-DPP-01`)
 - **Functorial Order Dynamics Monograph (*CATEGORY-THEORETIC BRIDGE*):** [DOI: 10.5281/zenodo.23525986](https://doi.org/10.5281/zenodo.23525986)
 - **Volume 1 Monograph (*INFORMATION PHYSICS*):** [DOI: 10.5281/zenodo.22665852](https://doi.org/10.5281/zenodo.22665852)
 - **Volume 2 Monograph (*SOVEREIGN SUBSTRATE ECONOMICS*):** [DOI: 10.5281/zenodo.23371581](https://doi.org/10.5281/zenodo.23371581)
@@ -76,9 +78,11 @@ This site is engineered with zero framework overhead ($C_{\text{ops}} = 0$) and 
 To prevent conceptual conflation, this root surface enforces strict cross-domain separation:
 
 - **Field Root (`admissibilityscience.com`):** Pure theoretical discipline, mathematical axioms, category-theoretic functorial dynamics ($\mathbf{\Phi} : \mathbf{L} \to \mathbf{E}$), and paper citations.
+- **Phase 8 Airlock & Edge Spec ([paradigm.admissibilityscience.com](https://paradigm.admissibilityscience.com/)):** Continuous-to-discrete domain projection surface, Plonkish decomposition gates ($G_1$–$G_6$), and edge specification under ADR-008.
 - **Epistemic Registry ([arcstonescienceauthority.org](https://arcstonescienceauthority.org/)):** Registered fields, domain definitions, laws, and mathematical primitives.
 - **Industrial Runtime ([arcstoneos.com](https://www.arcstoneos.com/)):** eBPF micro-kernels, bounded edge membranes, and production deployment substrates.
 - **Protocol Contract ([`arcstone-spec-epistemic-01`](https://github.com/trencinodin-stack/arcstone-spec-epistemic-01)):** Locked upstream Epistemic Network Protocol (ENP) master specification.
+- **Phase 8 Reference Airlock ([`domain-projection-spec`](https://github.com/trencinodin-stack/domain-projection-spec)):** Mechanized Coq 8.18.0 proofs, `#![no_std]` Rust reference engine, and continuous domain projection test harnesses (`v0.1.0` / ADR-008).
 - **Reference Substrate ([`arcstone-continuity-core`](https://github.com/trencinodin-stack/arcstone-continuity-core)):** `#[no_std]` Rust implementation of Subsystem 9 execution invariants, [canonical attestations](https://github.com/trencinodin-stack/arcstone-continuity-core/tree/main/docs/attestations), and [epistemic ledger](https://github.com/trencinodin-stack/arcstone-continuity-core/blob/main/EPISTEMIC_RECORD.md).
 - **Executable Benchmark ([`autodidactic-credential-sovereignty`](https://github.com/trencinodin-stack/autodidactic-credential-sovereignty)):** Autonomous assessment substrate mechanizing empty-axiom Coq verification, `#[no_std]` bare-metal test harnesses, and Groth16 zk-SNARK circuits.
 - **Execution Boundary ([`arcstone-mcp-sidecar`](https://github.com/trencinodin-stack/arcstone-mcp-sidecar)):** Reference downstream sidecar published on official MCP Registry enforcing $I_1–I_3$ safety invariants.
