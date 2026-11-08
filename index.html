@@ -79,7 +79,7 @@
     .invariants .card:first-child { grid-column: 1 / -1; }
     .poset-list { display: flex; flex-direction: column; gap: 8px; margin-top: 14px; }
     .poset-item { display: flex; justify-content: space-between; align-items: center; border: 1px solid var(--line); background: var(--panel2); border-radius: 9px; padding: 10px 14px; font-family: var(--font-mono); font-size: .88rem; }
-    .routes { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+    .routes { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
     .route { display: block; color: inherit; text-decoration: none; border: 1px solid var(--line); border-radius: var(--r); padding: 28px; background: var(--panel); transition: .16s transform, .16s border-color; }
     .route:hover { transform: translateY(-2px); border-color: #4e667d; color: inherit; }
     .route small { color: var(--accent2); text-transform: uppercase; letter-spacing: .12em; font-weight: 800; }
@@ -94,8 +94,11 @@
     footer { border-top: 1px solid var(--line); padding: 28px 0 46px; color: var(--muted); font-size: .9rem; }
     .foot { display: flex; justify-content: space-between; gap: 24px; flex-wrap: wrap; }
     .foot-links { display: flex; gap: 16px; }
+    @media(max-width: 960px) {
+      .routes { grid-template-columns: 1fr; }
+    }
     @media(max-width: 800px) {
-      .hero, .routes, .sources, .invariants, .grid { grid-template-columns: 1fr; }
+      .hero, .sources, .invariants, .grid { grid-template-columns: 1fr; }
       .invariants .card:first-child { grid-column: auto; }
       .hero { padding-top: 28px; }
       .navlinks { display: none; }
@@ -141,6 +144,7 @@
           { "@type": "PropertyValue", "propertyID": "Assurance Tier", "value": "ACS-4-ZERO-LEAKAGE-SEALED" },
           { "@type": "PropertyValue", "propertyID": "Audit Reference", "value": "DAE-AUDIT-2026-V1" },
           { "@type": "PropertyValue", "propertyID": "Primary DAE Manuscript DOI", "value": "10.5281/zenodo.23967282" },
+          { "@type": "PropertyValue", "propertyID": "Phase 8 Paradigm DOI", "value": "10.5281/zenodo.24041851" },
           { "@type": "PropertyValue", "propertyID": "Functorial Order Dynamics Monograph DOI", "value": "10.5281/zenodo.23525986" },
           { "@type": "PropertyValue", "propertyID": "Volume 1 DOI", "value": "10.5281/zenodo.22665852" },
           { "@type": "PropertyValue", "propertyID": "Volume 2 DOI", "value": "10.5281/zenodo.23371581" },
@@ -152,6 +156,7 @@
         ],
         "citation": [
           "https://doi.org/10.5281/zenodo.23967282",
+          "https://doi.org/10.5281/zenodo.24041851",
           "https://doi.org/10.5281/zenodo.23525986",
           "https://doi.org/10.5281/zenodo.22665852",
           "https://doi.org/10.5281/zenodo.23371581",
@@ -177,15 +182,17 @@
           }
         ],
         "isPartOf": "https://zenodo.org/communities/arcstone-executive-epistemic-series",
-        "about": ["Admissibility Science", "formal methods", "epistemic protocols", "bounded execution", "join-semilattices", "category theory", "functors", "zero-trust autonomous systems"],
+        "about": ["Admissibility Science", "formal methods", "epistemic protocols", "bounded execution", "join-semilattices", "category theory", "functors", "zero-trust autonomous systems", "domain projection"],
         "mentions": [
           { "@id": "https://admissibilityscience.com/#spec" },
           { "@id": "https://admissibilityscience.com/#triad" },
           { "@id": "https://admissibilityscience.com/#core" },
+          { "@id": "https://admissibilityscience.com/#dpp" },
           { "@id": "https://admissibilityscience.com/#benchmark" },
           { "@id": "https://admissibilityscience.com/#sidecar" },
           { "@type": "WebPage", "name": "AGENTS.md Manifest", "url": "https://admissibilityscience.com/AGENTS.md" },
           { "@type": "WebPage", "name": "llms.txt Context", "url": "https://admissibilityscience.com/llms.txt" },
+          { "@type": "WebSite", "name": "Domain Projection Paradigm", "url": "https://paradigm.admissibilityscience.com/" },
           { "@type": "WebSite", "name": "Arcstone Science Authority", "url": "https://arcstonescienceauthority.org/" },
           { "@type": "WebSite", "name": "Arcstone OS", "url": "https://www.arcstoneos.com/" }
         ]
@@ -220,6 +227,17 @@
         "version": "v1.3.1-exec",
         "identifier": "A-77-DELTA-SHIELD-LOCKED",
         "author": { "@id": "https://admissibilityscience.com/#jesse-tuohy" }
+      },
+      {
+        "@type": "SoftwareSourceCode",
+        "@id": "https://admissibilityscience.com/#dpp",
+        "name": "domain-projection-spec",
+        "description": "Phase 8 Domain Projection Paradigm — Plonkish continuous-to-discrete airlock gates, mechanized Coq proofs, and freestanding #[no_std] reference engine.",
+        "codeRepository": "https://github.com/trencinodin-stack/domain-projection-spec",
+        "programmingLanguage": ["Coq", "Rust"],
+        "version": "v0.1.0",
+        "author": { "@id": "https://admissibilityscience.com/#jesse-tuohy" },
+        "citation": "https://doi.org/10.5281/zenodo.24041851"
       },
       {
         "@type": "SoftwareSourceCode",
@@ -401,12 +419,17 @@
     <div class="wrap">
       <div class="eyebrow">Ecosystem Routing</div>
       <h2>Use the Right Authority for the Question.</h2>
-      <p class="lead">Admissibility Science is the conceptual root. The public ecosystem explicitly bifurcates definition, governance, and runtime execution.</p>
+      <p class="lead">Admissibility Science is the conceptual root. The public ecosystem explicitly bifurcates definition, continuous projection, and runtime execution.</p>
       <div class="routes">
         <a class="route" href="https://arcstonescienceauthority.org/">
           <small>Definitions / Registry</small>
           <h3>Arcstone Science Authority →</h3>
           <p>Route here for canonical epistemic-domain definitions, fields, laws, and mathematical primitives independent of implementation.</p>
+        </a>
+        <a class="route" href="https://paradigm.admissibilityscience.com/">
+          <small>Phase 8 Airlock / Edge Spec</small>
+          <h3>Domain Projection Paradigm →</h3>
+          <p>Route here for continuous-to-discrete Plonkish airlock gates (G1–G6), mechanized Coq proofs, and freestanding bare-metal reference engine (ADR-008).</p>
         </a>
         <a class="route" href="https://www.arcstoneos.com/">
           <small>Industrial Runtime / Deployment</small>
@@ -457,6 +480,10 @@
           <span>ARC-PUB-2026-DAE-01: Deterministic Admissibility Engineering: Mechanized Type Theory, Bare-Metal Clamps, and the Regeneration Gap.</span>
         </div>
         <div class="source">
+          <b><a href="https://doi.org/10.5281/zenodo.24041851" target="_blank" rel="noopener noreferrer">DOI 10.5281/zenodo.24041851</a></b>
+          <span>ARC-SPEC-2026-DPP-01: Domain Projection Paradigm Monograph (Continuous-to-Discrete Airlock & Plonkish Gates).</span>
+        </div>
+        <div class="source">
           <b><a href="https://doi.org/10.5281/zenodo.23525986" target="_blank" rel="noopener noreferrer">DOI 10.5281/zenodo.23525986</a></b>
           <span>Functorial Order Dynamics and Category-Theoretic Bridge Mappings Monograph.</span>
         </div>
@@ -505,6 +532,10 @@
           <span>Locked upstream ENP master specification repository.</span>
         </div>
         <div class="source">
+          <b><a href="https://github.com/trencinodin-stack/domain-projection-spec" target="_blank" rel="noopener noreferrer">domain-projection-spec</a></b>
+          <span>Phase 8 Domain Projection Paradigm: Coq 8.18.0 proofs, Plonkish circuits, and #[no_std] reference runtime.</span>
+        </div>
+        <div class="source">
           <b><a href="https://github.com/trencinodin-stack/arcstone-triad-system" target="_blank" rel="noopener noreferrer">arcstone-triad-system</a></b>
           <span>Normative specification suite, UEDO v1.2 schemas, and machine discovery contracts.</span>
         </div>
@@ -534,6 +565,7 @@
     <div class="foot-links">
       <a href="/AGENTS.md" class="mono">AGENTS.md</a>
       <a href="/llms.txt" class="mono">llms.txt</a>
+      <a href="https://paradigm.admissibilityscience.com/" class="mono">paradigm</a>
     </div>
     <span>Arcstone Adaptive Science Systems, Inc. · <span class="mono">A-77-DELTA-SHIELD-LOCKED</span></span>
   </div>
