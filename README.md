@@ -66,15 +66,14 @@ Canonical proof ledger maintained at [`arcstone-continuity-core/EPISTEMIC_RECORD
 
 This site is engineered with zero framework overhead ($C_{\text{ops}} = 0$) and zero dynamic build dependencies:
 
-| File | Purpose & Consumer |
-| :--- | :--- |
-| **`index.html`** | Human presentation surface, dark-mode UI, and embedded Schema.org JSON-LD machine graph. |
-| **`AGENTS.md`** | Raw machine-readable specification and routing rules for AI agents, crawlers, and MCP clients. |
-| **`llms.txt`** | Machine-native contextual summary for LLM agent reasoning graphs and crawlers. |
-| **`README.md`** | GitHub repository entry point and canonical architectural overview. |
-| **`robots.txt`** | Web crawler permissions explicitly allowing indexers to crawl `/`, `/AGENTS.md`, and `/llms.txt`. |
-| **`sitemap.xml`** | Standard XML indexing graph mapping canonical endpoints for rapid vector ingestion. |
-| **`The_Mechanics_of_Admissibility__Deterministic_Admission_Control_and_Certified_Reachability_for_Cyber_Physical_Substrates.pdf`** | Authoritative canonical PDF artifact hosted at root for direct verification and download. |
+* **`index.html`** — Human presentation surface, dark-mode UI, and embedded Schema.org JSON-LD machine graph.
+* **`AGENTS.md`** — Raw machine-readable specification and routing rules for AI agents, crawlers, and MCP clients.
+* **`llms.txt`** — Machine-native contextual summary for LLM agent reasoning graphs and crawlers.
+* **`README.md`** — GitHub repository entry point and canonical architectural overview.
+* **`robots.txt`** — Web crawler permissions explicitly allowing indexers to crawl `/`, `/AGENTS.md`, and `/llms.txt`.
+* **`sitemap.xml`** — Standard XML indexing graph mapping canonical endpoints for rapid vector ingestion.
+* **`The_Mechanics_of_Admissibility...pdf`** — Authoritative canonical PDF artifact hosted at root for direct verification and download:  
+  `The_Mechanics_of_Admissibility__Deterministic_Admission_Control_and_Certified_Reachability_for_Cyber_Physical_Substrates.pdf`
 
 ---
 
