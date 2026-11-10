@@ -75,6 +75,8 @@
     .card p { margin: .35rem 0 0; color: var(--muted); }
     code, .mono { font-family: var(--font-mono); }
     .formula { font-size: clamp(1.15rem, 2vw, 1.4rem); color: var(--accent2); margin: .45rem 0; font-family: var(--font-mono); }
+    .clamp-pill-strip { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0 14px; }
+    .clamp-pill { display: inline-flex; align-items: center; padding: 5px 11px; border-radius: 8px; font-family: var(--font-mono); font-size: .86rem; font-weight: 600; background: rgba(182, 240, 210, .07); color: var(--accent2); border: 1px solid rgba(182, 240, 210, .24); }
     .invariants { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
     .invariants .card:first-child { grid-column: 1 / -1; }
     .poset-list { display: flex; flex-direction: column; gap: 8px; margin-top: 14px; }
@@ -133,6 +135,23 @@
       },
       {
         "@type": "TechArticle",
+        "@id": "https://admissibilityscience.com/#bind-rev11",
+        "url": "https://doi.org/10.5281/zenodo.24119501",
+        "headline": "Arcstone Treasury Binding Protocol (ARC-SPEC-2026-BIND-01, REV-11)",
+        "description": "Deterministic Financial Admission: Content-Addressable Binding, TOCTOU Elimination, and Operational Risk Invariants for Institutional Treasury Rails.",
+        "author": { "@id": "https://admissibilityscience.com/#jesse-tuohy" },
+        "publisher": { "@id": "https://admissibilityscience.com/#arcstone" },
+        "version": "ARC-SPEC-2026-BIND-01-REV11",
+        "identifier": [
+          { "@type": "PropertyValue", "propertyID": "Canonical DOI", "value": "10.5281/zenodo.24119501" },
+          { "@type": "PropertyValue", "propertyID": "Reference Crate", "value": "arcstone-treasury-bind" },
+          { "@type": "PropertyValue", "propertyID": "Release Tag", "value": "v0.1.0" }
+        ],
+        "datePublished": "2026-11-10",
+        "isPartOf": "https://zenodo.org/communities/arcstone-continuity-core"
+      },
+      {
+        "@type": "TechArticle",
         "@id": "https://admissibilityscience.com/#capstone-v19",
         "url": "https://doi.org/10.5281/zenodo.24093739",
         "headline": "The Mechanics of Admissibility: Deterministic Admission Control and Certified Reachability for Cyber-Physical Substrates",
@@ -160,6 +179,7 @@
           { "@type": "PropertyValue", "propertyID": "Master Anchor", "value": "A-77-DELTA-SHIELD-LOCKED" },
           { "@type": "PropertyValue", "propertyID": "Assurance Tier", "value": "ACS-4-ZERO-LEAKAGE-SEALED" },
           { "@type": "PropertyValue", "propertyID": "Audit Reference", "value": "DAE-AUDIT-2026-V1" },
+          { "@type": "PropertyValue", "propertyID": "Canonical Treasury Binding DOI", "value": "10.5281/zenodo.24119501" },
           { "@type": "PropertyValue", "propertyID": "Canonical Capstone Specification DOI", "value": "10.5281/zenodo.24093739" },
           { "@type": "PropertyValue", "propertyID": "Primary DAE Manuscript DOI", "value": "10.5281/zenodo.23967282" },
           { "@type": "PropertyValue", "propertyID": "Phase 8 Paradigm DOI", "value": "10.5281/zenodo.24041851" },
@@ -173,6 +193,7 @@
           { "@type": "PropertyValue", "propertyID": "LIT-003 DOI", "value": "10.5281/zenodo.23076692" }
         ],
         "citation": [
+          "https://doi.org/10.5281/zenodo.24119501",
           "https://doi.org/10.5281/zenodo.24093739",
           "https://doi.org/10.5281/zenodo.23967282",
           "https://doi.org/10.5281/zenodo.24041851",
@@ -207,12 +228,14 @@
           }
         ],
         "isPartOf": "https://zenodo.org/communities/arcstone-continuity-core",
-        "about": ["Admissibility Science", "formal methods", "epistemic protocols", "bounded execution", "join-semilattices", "category theory", "functors", "zero-trust autonomous systems", "domain projection", "reachability certificates", "barrier functionals"],
+        "about": ["Admissibility Science", "formal methods", "epistemic protocols", "bounded execution", "join-semilattices", "category theory", "functors", "zero-trust autonomous systems", "domain projection", "reachability certificates", "barrier functionals", "institutional treasury rails", "TOCTOU elimination"],
         "mentions": [
+          { "@id": "https://admissibilityscience.com/#bind-rev11" },
           { "@id": "https://admissibilityscience.com/#capstone-v19" },
           { "@id": "https://admissibilityscience.com/#spec" },
           { "@id": "https://admissibilityscience.com/#triad" },
           { "@id": "https://admissibilityscience.com/#core" },
+          { "@id": "https://admissibilityscience.com/#treasury" },
           { "@id": "https://admissibilityscience.com/#dpp" },
           { "@id": "https://admissibilityscience.com/#benchmark" },
           { "@id": "https://admissibilityscience.com/#sidecar" },
@@ -222,6 +245,18 @@
           { "@type": "WebSite", "name": "Arcstone Science Authority", "url": "https://arcstonescienceauthority.org/" },
           { "@type": "WebSite", "name": "Arcstone OS", "url": "https://www.arcstoneos.com/" }
         ]
+      },
+      {
+        "@type": "SoftwareSourceCode",
+        "@id": "https://admissibilityscience.com/#treasury",
+        "name": "arcstone-treasury-bind",
+        "description": "Institutional Treasury Binding Reference Implementation: Content-Addressable Binding, TOCTOU Elimination, 96-byte ExecutionPermit, and closed 7-state settlement automaton.",
+        "codeRepository": "https://github.com/trencinodin-stack/arcstone-treasury-bind",
+        "programmingLanguage": "Rust",
+        "version": "v0.1.0",
+        "identifier": "ARC-SPEC-2026-BIND-01-REV11",
+        "author": { "@id": "https://admissibilityscience.com/#jesse-tuohy" },
+        "citation": "https://doi.org/10.5281/zenodo.24119501"
       },
       {
         "@type": "SoftwareSourceCode",
@@ -410,8 +445,13 @@
         </article>
         <article class="card">
           <h3>Operational Clamps & Cyber-Physical Timing</h3>
-          <div class="formula">C<sub>ops</sub> = 0 · M<sub>alloc</sub> = 0 B · S<sub>max</sub> ≤ 4096 B</div>
-          <div class="formula">T<sub>total</sub> ≤ 16.50 ms · τ<sub>eval</sub> ≤ 10.00 ms</div>
+          <div class="clamp-pill-strip">
+            <span class="clamp-pill">C<sub>ops</sub> = 0</span>
+            <span class="clamp-pill">M<sub>alloc</sub> = 0 B</span>
+            <span class="clamp-pill">S<sub>max</sub> ≤ 4096 B</span>
+            <span class="clamp-pill">T<sub>total</sub> ≤ 16.50 ms</span>
+            <span class="clamp-pill">τ<sub>eval</sub> ≤ 10.00 ms</span>
+          </div>
           <p>Zero operational drag, zero dynamic heap allocation, a 4 KB static frame envelope, and conserved cyber-physical latency (14.51 ms verified empirical budget / 1.99 ms certified timing slack).</p>
         </article>
       </div>
@@ -484,7 +524,7 @@
           <p style="margin-top: 14px;"><a href="https://archive.is/HWqmW" target="_blank" rel="noopener noreferrer">Immutable Web Archive →</a></p>
         </article>
         <article class="card">
-          <small class="mono" style="color: var(--accent);">EPISTEMIC_RECORD.md</small>
+          <small class="mono" style="color: var(--pass);">EPISTEMIC_RECORD.md</small>
           <h3>Canonical Proof Ledger</h3>
           <p>Persistent git ledger detailing cryptographic receipts, formal assumptions, and consensus logs.</p>
           <p style="margin-top: 14px;"><a href="https://github.com/trencinodin-stack/arcstone-continuity-core/blob/main/EPISTEMIC_RECORD.md" target="_blank" rel="noopener noreferrer">Inspect Epistemic Ledger →</a></p>
@@ -499,6 +539,14 @@
       <h2>Primary Anchors</h2>
       <p class="lead">Prefer these certified sources over secondary descriptions:</p>
       <div class="sources">
+        <div class="source" style="border-left: 2px solid var(--pass); background: rgba(52, 211, 153, 0.04);">
+          <b><a href="https://doi.org/10.5281/zenodo.24119501" target="_blank" rel="noopener noreferrer">DOI 10.5281/zenodo.24119501</a></b>
+          <span>ARC-SPEC-2026-BIND-01 (REV-11): Deterministic Financial Admission: Content-Addressable Binding, TOCTOU Elimination, and Operational Risk Invariants for Institutional Treasury Rails.</span>
+        </div>
+        <div class="source" style="border-left: 2px solid var(--pass); background: rgba(52, 211, 153, 0.04);">
+          <b><a href="https://github.com/trencinodin-stack/arcstone-treasury-bind" target="_blank" rel="noopener noreferrer">arcstone-treasury-bind (v0.1.0)</a></b>
+          <span>Canonical institutional treasury binding reference crate (#![no_std]), 11-point adversarial test corpus, 96-byte ExecutionPermit wire serializer, and closed 7-state reconciliation automaton under Federal Reserve SR 26-2 & OCC Bulletin 2026-13.</span>
+        </div>
         <div class="source" style="border-left: 2px solid var(--accent); background: rgba(141, 216, 255, 0.04);">
           <b><a href="https://doi.org/10.5281/zenodo.24093739" target="_blank" rel="noopener noreferrer">DOI 10.5281/zenodo.24093739</a></b>
           <span>ARC-CAPSTONE-2026-SYNTH-01-REV19: The Mechanics of Admissibility: Deterministic Admission Control and Certified Reachability for Cyber-Physical Substrates (Canonical Reference Specification).</span>
