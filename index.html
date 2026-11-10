@@ -75,8 +75,9 @@
     .card p { margin: .35rem 0 0; color: var(--muted); }
     code, .mono { font-family: var(--font-mono); }
     .formula { font-size: clamp(1.15rem, 2vw, 1.4rem); color: var(--accent2); margin: .45rem 0; font-family: var(--font-mono); }
-    .clamp-pill-strip { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0 14px; }
-    .clamp-pill { display: inline-flex; align-items: center; padding: 5px 11px; border-radius: 8px; font-family: var(--font-mono); font-size: .86rem; font-weight: 600; background: rgba(182, 240, 210, .07); color: var(--accent2); border: 1px solid rgba(182, 240, 210, .24); }
+    .clamp-pill-strip { display: flex; flex-wrap: wrap; gap: 10px; margin: 12px 0 16px; }
+    .clamp-pill { display: inline-flex; align-items: center; padding: 7px 14px; border-radius: 9px; font-family: var(--font-mono); font-size: 1.05rem; font-weight: 600; background: rgba(182, 240, 210, .09); color: var(--accent2); border: 1px solid rgba(182, 240, 210, .28); letter-spacing: .02em; white-space: nowrap; }
+    .clamp-pill sub { font-size: 0.75em; margin-left: 1px; }
     .invariants { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
     .invariants .card:first-child { grid-column: 1 / -1; }
     .poset-list { display: flex; flex-direction: column; gap: 8px; margin-top: 14px; }
@@ -105,6 +106,7 @@
       .hero { padding-top: 28px; }
       .navlinks { display: none; }
       main { padding-top: 38px; }
+      .clamp-pill { font-size: .92rem; padding: 6px 11px; }
     }
     @media(prefers-reduced-motion: reduce) {
       html { scroll-behavior: auto; }
