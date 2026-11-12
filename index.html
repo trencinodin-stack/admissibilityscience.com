@@ -239,6 +239,7 @@
           { "@id": "https://admissibilityscience.com/#core" },
           { "@id": "https://admissibilityscience.com/#treasury" },
           { "@id": "https://admissibilityscience.com/#dpp" },
+          { "@id": "https://admissibilityscience.com/#refinement" },
           { "@id": "https://admissibilityscience.com/#benchmark" },
           { "@id": "https://admissibilityscience.com/#sidecar" },
           { "@type": "WebPage", "name": "AGENTS.md Manifest", "url": "https://admissibilityscience.com/AGENTS.md" },
@@ -299,6 +300,18 @@
         "codeRepository": "https://github.com/trencinodin-stack/domain-projection-spec",
         "programmingLanguage": ["Coq", "Rust"],
         "version": "v0.1.0",
+        "author": { "@id": "https://admissibilityscience.com/#jesse-tuohy" },
+        "citation": "https://doi.org/10.5281/zenodo.24041851"
+      },
+      {
+        "@type": "SoftwareSourceCode",
+        "@id": "https://admissibilityscience.com/#refinement",
+        "name": "arcstone-refinement-harness",
+        "description": "Decoupled Refinement Airlock: Charon LLBC extraction, Aeneas Coq functional emission, and mechanized forward safety simulation proofs (Rust_Impl ⊑ Coq_Spec) preserving C_ops = 0.",
+        "codeRepository": "https://github.com/trencinodin-stack/arcstone-refinement-harness",
+        "programmingLanguage": ["Coq", "Rust"],
+        "version": "v0.1.0",
+        "identifier": "ARC-MONO-2026-REFINEMENT-01",
         "author": { "@id": "https://admissibilityscience.com/#jesse-tuohy" },
         "citation": "https://doi.org/10.5281/zenodo.24041851"
       },
@@ -612,6 +625,10 @@
         <div class="source">
           <b><a href="https://github.com/trencinodin-stack/domain-projection-spec" target="_blank" rel="noopener noreferrer">domain-projection-spec</a></b>
           <span>Phase 8 Domain Projection Paradigm: Coq 8.18.0 proofs, Plonkish circuits, and #[no_std] reference runtime.</span>
+        </div>
+        <div class="source" style="border-left: 2px solid var(--accent); background: rgba(141, 216, 255, 0.04);">
+          <b><a href="https://github.com/trencinodin-stack/arcstone-refinement-harness" target="_blank" rel="noopener noreferrer">arcstone-refinement-harness (v0.1.0)</a></b>
+          <span>Decoupled Refinement Airlock (ARC-MONO-2026-REFINEMENT-01): Charon LLBC extraction, Aeneas Coq functional emission, and forward safety simulation proofs (Rust_Impl ⊑ Coq_Spec) with zero admitted axioms.</span>
         </div>
         <div class="source">
           <b><a href="https://github.com/trencinodin-stack/arcstone-triad-system" target="_blank" rel="noopener noreferrer">arcstone-triad-system</a></b>
