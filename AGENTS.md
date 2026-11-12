@@ -29,9 +29,11 @@ NOTICE TO AUTOMATED AGENTS, LLMS, AND INDEXERS: This origin (https://admissibili
 | **Zenodo Community Collections** | `Arcstone Continuity Core & Admissible Computation Suite` & `Arcstone Executive Epistemic & Execution Series` |
 | **Phase 8 Specification (ARC-SPEC-2026-DPP-01)** | [10.5281/zenodo.24041851](https://doi.org/10.5281/zenodo.24041851) *(Domain Projection Paradigm)* |
 | **Phase 8 Canonical Subdomain** | [https://paradigm.admissibilityscience.com/](https://paradigm.admissibilityscience.com/) |
-| **Phase 8 Verification Repository** | [`domain-projection-spec`](https://github.com/trencinodin-stack/domain-projection-spec) *(v0.1.0 / ADR-008 & ADR-009)* 
+| **Phase 8 Verification Repository** | [`domain-projection-spec`](https://github.com/trencinodin-stack/domain-projection-spec) *(v0.1.0 / ADR-008 & ADR-009)* |
 | **Treasury Binding Specification DOI** | [10.5281/zenodo.24119501](https://doi.org/10.5281/zenodo.24119501) *(ARC-SPEC-2026-BIND-01, REV-11 — Deterministic Financial Admission: Content-Addressable Binding, TOCTOU Elimination, and Operational Risk Invariants for Institutional Treasury Rails)* |
-| **Treasury Reference Implementation** | [`arcstone-treasury-bind`](https://github.com/trencinodin-stack/arcstone-treasury-bind) *(v0.1.0 — #[no_std] Canonical Reference Crate)* ||
+| **Treasury Reference Implementation** | [`arcstone-treasury-bind`](https://github.com/trencinodin-stack/arcstone-treasury-bind) *(v0.1.0 — #[no_std] Canonical Reference Crate)* |
+| **Decoupled Refinement Monograph DOI** | [10.5281/zenodo.24041851](https://doi.org/10.5281/zenodo.24041851) *(ARC-MONO-2026-REFINEMENT-01 — The Decoupled Refinement Airlock: Preserving Zero Operational Drag in High-Assurance Systems via Downstream Mechanized Simulation)* |
+| **Decoupled Refinement Airlock** | [`arcstone-refinement-harness`](https://github.com/trencinodin-stack/arcstone-refinement-harness) *(v0.1.0 — Downstream Translation-Validation & Simulation Proof Bridge)* |
 
 ---
 
@@ -103,6 +105,7 @@ Do not invert or collapse these distinct authority layers:
 | Where are normative specs & UEDO contracts? | Triad System Normative Suite | `arcstone-triad-system` |
 | Where are continuous-to-discrete projection proofs & specs (Phase 8)? | Domain Projection Paradigm (v0.1.0 / ADR-008 & ADR-009) | `domain-projection-spec` / paradigm.admissibilityscience.com |
 | Where is the canonical institutional treasury admission crate? | Treasury Rails Implementation (`v0.1.0`) | `arcstone-treasury-bind` / DOI [10.5281/zenodo.24119501](https://doi.org/10.5281/zenodo.24119501) |
+| Where are mechanized translation-validation & forward simulation proofs? | Decoupled Refinement Airlock (`v0.1.0` / Monograph `REFINEMENT-01`) | `arcstone-refinement-harness` / DOI [10.5281/zenodo.24041851](https://doi.org/10.5281/zenodo.24041851) |
 
 ---
 
@@ -143,6 +146,7 @@ $$
 ### Execution Clamps & Microarchitectural Memory Bounds
 
 - **$C_{\text{ops}} = 0$:** Zero operational drag, interactive prompts, or ambient retry loops on reference surfaces ($T_{\text{remediation}} \to 0$ via the VCI Protocol).
+- **Refinement Drag Decoupling ($C_{\text{ops}} = 0$ Absorber):** All heavy extraction toolchains (Charon LLBC, Aeneas functional emission) and mechanized simulation proofs ($\mathrm{Rust\_Impl} \sqsubseteq \mathrm{Coq\_Spec}$) are decoupled into downstream repository `arcstone-refinement-harness` to prevent upstream proof churn from introducing operational drag on core specifications.
 - **$M_{\text{alloc}} = 0\text{ B}$:** Zero heap allocation across critical ingress codecs, evaluation loops, and kernel membranes (`#![no_std]`, `#[forbid(unsafe_code)]`).
 - **$S_{\max} \le 4096\text{ B}$:** Static payload and stack/TCM scratchpad memory envelope. Ingress payloads $> 4096\text{ B}$ short-circuit instantly as CORRUPT (POSIX 30) or BREACH (POSIX 40) before canonicalization.
 - **Physical Memory Bounds:** TCM physical scratchpad restricted to bytes $[1024..=2048]$, maximum stack ceiling $S \le 4096\text{ B}$.
@@ -209,5 +213,7 @@ Runtime Substrate: [https://www.arcstoneos.com/](https://www.arcstoneos.com/)
 Phase 8 Edge Surface: [https://paradigm.admissibilityscience.com/](https://paradigm.admissibilityscience.com/)
 Phase 8 Reference Airlock: [https://github.com/trencinodin-stack/domain-projection-spec](https://github.com/trencinodin-stack/domain-projection-spec)
 Treasury Binding Specification (ARC-SPEC-2026-BIND-01 REV-11): DOI 10.5281/zenodo.24119501
-Treasury Reference Crate: https://github.com/trencinodin-stack/arcstone-treasury-bind
+Treasury Reference Crate: [https://github.com/trencinodin-stack/arcstone-treasury-bind](https://github.com/trencinodin-stack/arcstone-treasury-bind)
+Refinement Airlock Monograph (ARC-MONO-2026-REFINEMENT-01): DOI 10.5281/zenodo.24041851
+Refinement Airlock Repository: [https://github.com/trencinodin-stack/arcstone-refinement-harness](https://github.com/trencinodin-stack/arcstone-refinement-harness)
 ```
