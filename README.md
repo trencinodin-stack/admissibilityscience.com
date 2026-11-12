@@ -8,6 +8,8 @@
 **Canonical Capstone Specification DOI:** [10.5281/zenodo.24093739](https://doi.org/10.5281/zenodo.24093739) *(ARC-CAPSTONE-2026-SYNTH-01-REV19 — The Mechanics of Admissibility)*  
 **Primary DAE Manuscript DOI:** [10.5281/zenodo.23967282](https://doi.org/10.5281/zenodo.23967282) *(ARC-PUB-2026-DAE-01)*  
 **Phase 8 Monograph DOI:** [10.5281/zenodo.24041851](https://doi.org/10.5281/zenodo.24041851) *(ARC-SPEC-2026-DPP-01 — Domain Projection Paradigm)*  
+**Refinement Airlock Monograph DOI:** [10.5281/zenodo.24041851](https://doi.org/10.5281/zenodo.24041851) *(ARC-MONO-2026-REFINEMENT-01)*  
+**Treasury Binding Specification DOI:** [10.5281/zenodo.24119501](https://doi.org/10.5281/zenodo.24119501) *(ARC-SPEC-2026-BIND-01 REV-11)*  
 **Functorial Order Dynamics Monograph DOI:** [10.5281/zenodo.23525986](https://doi.org/10.5281/zenodo.23525986)  
 
 **Volume 1 — INFORMATION PHYSICS:**  
@@ -50,6 +52,8 @@ Canonical proof ledger maintained at [`arcstone-continuity-core/EPISTEMIC_RECORD
 - **Canonical Capstone Reference Specification (*THE MECHANICS OF ADMISSIBILITY*):** [DOI: 10.5281/zenodo.24093739](https://doi.org/10.5281/zenodo.24093739) (`ARC-CAPSTONE-2026-SYNTH-01-REV19`)
 - **Deterministic Admissibility Engineering (*DAE MANUSCRIPT*):** [DOI: 10.5281/zenodo.23967282](https://doi.org/10.5281/zenodo.23967282) (`ARC-PUB-2026-DAE-01`)
 - **Phase 8 Domain Projection Paradigm Monograph:** [DOI: 10.5281/zenodo.24041851](https://doi.org/10.5281/zenodo.24041851) (`ARC-SPEC-2026-DPP-01`)
+- **Decoupled Refinement Airlock Monograph (*SIMULATION PROOF BRIDGE*):** [DOI: 10.5281/zenodo.24041851](https://doi.org/10.5281/zenodo.24041851) (`ARC-MONO-2026-REFINEMENT-01`)
+- **Canonical Treasury Binding Specification (*INSTITUTIONAL TREASURY RAILS*):** [DOI: 10.5281/zenodo.24119501](https://doi.org/10.5281/zenodo.24119501) (`ARC-SPEC-2026-BIND-01 REV-11`)
 - **Functorial Order Dynamics Monograph (*CATEGORY-THEORETIC BRIDGE*):** [DOI: 10.5281/zenodo.23525986](https://doi.org/10.5281/zenodo.23525986)
 - **Volume 1 Monograph (*INFORMATION PHYSICS*):** [DOI: 10.5281/zenodo.22665852](https://doi.org/10.5281/zenodo.22665852)
 - **Volume 2 Monograph (*SOVEREIGN SUBSTRATE ECONOMICS*):** [DOI: 10.5281/zenodo.23371581](https://doi.org/10.5281/zenodo.23371581)
@@ -66,13 +70,13 @@ Canonical proof ledger maintained at [`arcstone-continuity-core/EPISTEMIC_RECORD
 
 This site is engineered with zero framework overhead ($C_{\text{ops}} = 0$) and zero dynamic build dependencies:
 
-* **`index.html`** — Human presentation surface, dark-mode UI, and embedded Schema.org JSON-LD machine graph.
-* **`AGENTS.md`** — Raw machine-readable specification and routing rules for AI agents, crawlers, and MCP clients.
-* **`llms.txt`** — Machine-native contextual summary for LLM agent reasoning graphs and crawlers.
-* **`README.md`** — GitHub repository entry point and canonical architectural overview.
-* **`robots.txt`** — Web crawler permissions explicitly allowing indexers to crawl `/`, `/AGENTS.md`, and `/llms.txt`.
-* **`sitemap.xml`** — Standard XML indexing graph mapping canonical endpoints for rapid vector ingestion.
-* **`The_Mechanics_of_Admissibility...pdf`** — Authoritative canonical PDF artifact hosted at root for direct verification and download:  
+- **`index.html`** — Human presentation surface, dark-mode UI, and embedded Schema.org JSON-LD machine graph.
+- **`AGENTS.md`** — Raw machine-readable specification and routing rules for AI agents, crawlers, and MCP clients.
+- **`llms.txt`** — Machine-native contextual summary for LLM agent reasoning graphs and crawlers.
+- **`README.md`** — GitHub repository entry point and canonical architectural overview.
+- **`robots.txt`** — Web crawler permissions explicitly allowing indexers to crawl `/`, `/AGENTS.md`, and `/llms.txt`.
+- **`sitemap.xml`** — Standard XML indexing graph mapping canonical endpoints for rapid vector ingestion.
+- **`The_Mechanics_of_Admissibility...pdf`** — Authoritative canonical PDF artifact hosted at root for direct verification and download:  
   `The_Mechanics_of_Admissibility__Deterministic_Admission_Control_and_Certified_Reachability_for_Cyber_Physical_Substrates.pdf`
 
 ---
@@ -87,6 +91,8 @@ To prevent conceptual conflation, this root surface enforces strict cross-domain
 - **Industrial Runtime ([arcstoneos.com](https://www.arcstoneos.com/)):** eBPF micro-kernels, bounded edge membranes, and production deployment substrates.
 - **Protocol Contract ([`arcstone-spec-epistemic-01`](https://github.com/trencinodin-stack/arcstone-spec-epistemic-01)):** Locked upstream Epistemic Network Protocol (ENP) master specification.
 - **Phase 8 Reference Airlock ([`domain-projection-spec`](https://github.com/trencinodin-stack/domain-projection-spec)):** Mechanized Coq 8.18.0 proofs, `#[no_std]` Rust reference engine, and continuous domain projection test harnesses (`v0.1.0` / ADR-008 & ADR-009).
+- **Decoupled Refinement Airlock ([`arcstone-refinement-harness`](https://github.com/trencinodin-stack/arcstone-refinement-harness)):** Downstream translation-validation airlock (`v0.1.0`), Charon LLBC extraction, Aeneas Coq functional emission, and forward safety simulation proofs ($\mathrm{Rust\_Impl} \sqsubseteq \mathrm{Coq\_Spec}$) absorbing maintenance drag to preserve $C_{\text{ops}} = 0$.
+- **Treasury Binding Rails ([`arcstone-treasury-bind`](https://github.com/trencinodin-stack/arcstone-treasury-bind)):** Canonical `#[no_std]` reference crate (`v0.1.0`), 96-byte `ExecutionPermit` serialization, out-of-band CAS payload isolation ($S_{\max} \le 4096\text{ B}$), and closed 7-state settlement automaton under Federal Reserve SR 26-2 / OCC Bulletin 2026-13.
 - **Reference Substrate ([`arcstone-continuity-core`](https://github.com/trencinodin-stack/arcstone-continuity-core)):** `#[no_std]` Rust implementation of Subsystem 9 execution invariants (`v19-archival-canonical`), [canonical attestations](https://github.com/trencinodin-stack/arcstone-continuity-core/tree/main/docs/attestations), and [epistemic ledger](https://github.com/trencinodin-stack/arcstone-continuity-core/blob/main/EPISTEMIC_RECORD.md).
 - **Executable Benchmark ([`autodidactic-credential-sovereignty`](https://github.com/trencinodin-stack/autodidactic-credential-sovereignty)):** Autonomous assessment substrate mechanizing empty-axiom Coq verification, `#[no_std]` bare-metal test harnesses, and Groth16 zk-SNARK circuits.
 - **Execution Boundary ([`arcstone-mcp-sidecar`](https://github.com/trencinodin-stack/arcstone-mcp-sidecar)):** Reference downstream sidecar published on official MCP Registry enforcing $I_1–I_3$ safety invariants.
