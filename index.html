@@ -246,6 +246,7 @@
           { "@id": "https://admissibilityscience.com/#treasury" },
           { "@id": "https://admissibilityscience.com/#dpp" },
           { "@id": "https://admissibilityscience.com/#refinement" },
+          { "@id": "https://admissibilityscience.com/#airlock-blueprint" },
           { "@id": "https://admissibilityscience.com/#benchmark" },
           { "@id": "https://admissibilityscience.com/#sidecar" },
           { "@type": "WebPage", "name": "AGENTS.md Manifest", "url": "https://admissibilityscience.com/AGENTS.md" },
@@ -318,6 +319,18 @@
         "programmingLanguage": ["Coq", "Rust"],
         "version": "v0.1.0",
         "identifier": "ARC-MONO-2026-REFINEMENT-01",
+        "author": { "@id": "https://admissibilityscience.com/#jesse-tuohy" },
+        "citation": "https://doi.org/10.5281/zenodo.24041851"
+      },
+    {
+        "@type": "SoftwareSourceCode",
+        "@id": "https://admissibilityscience.com/#airlock-blueprint",
+        "name": "arcstone-airlock-blueprint",
+        "description": "Turnkey Refinement Airlock Template: Public GitHub repository template packaging an offline digest-pinned OCI Charon/Aeneas/Coq 8.18.0 airlock (--network none), semantic canary mutant verification, coqchk -o kernel rechecking, and Sigstore-attested REFINEMENT-AUDIT.json release receipts for bare-metal #![no_std] Rust crates (C_ops = 0 upstream).",
+        "codeRepository": "https://github.com/trencinodin-stack/arcstone-airlock-blueprint",
+        "programmingLanguage": ["Coq", "Rust", "Shell"],
+        "version": "v0.1.0",
+        "identifier": "A-77-DELTA-SHIELD-LOCKED",
         "author": { "@id": "https://admissibilityscience.com/#jesse-tuohy" },
         "citation": "https://doi.org/10.5281/zenodo.24041851"
       },
@@ -635,6 +648,10 @@
         <div class="source" style="border-left: 2px solid var(--accent); background: rgba(141, 216, 255, 0.04);">
           <b><a href="https://github.com/trencinodin-stack/arcstone-refinement-harness" target="_blank" rel="noopener noreferrer">arcstone-refinement-harness (v0.1.0)</a></b>
           <span>Decoupled Refinement Airlock (ARC-MONO-2026-REFINEMENT-01): Charon LLBC extraction, Aeneas Coq functional emission, and forward safety simulation proofs (Rust_Impl ⊑ Coq_Spec) with zero admitted axioms. Sealed receipt: <a href="https://github.com/trencinodin-stack/arcstone-refinement-harness/blob/main/docs/attestations/REFINEMENT-AUDIT-2026-V1.json" target="_blank" rel="noopener noreferrer">REFINEMENT-AUDIT-2026-V1.json</a> (<code>REFINEMENT-PROOF-CHAIN-CLOSED</code>, <code>commit_sha: d8d8d3870dd8b9f449b445645ec73ca5d0f02e60</code>, <code>tree_sha256: fcd08cc86d9802f64442ab7162abcf23678900fda692a2427902cbaf05abd3da</code>).</span>
+        </div>
+        <div class="source">
+          <b><a href="https://github.com/trencinodin-stack/arcstone-airlock-blueprint" target="_blank" rel="noopener noreferrer">arcstone-airlock-blueprint (v0.1.0)</a></b>
+          <span>Turnkey Refinement Airlock Template: Public GitHub repository template packaging an offline digest-pinned OCI Charon/Aeneas/Coq 8.18.0 airlock (<code>--network none</code>), semantic canary mutant verification, <code>coqchk -o</code> kernel rechecking, and Sigstore-attested <code>REFINEMENT-AUDIT.json</code> release receipts for bare-metal <code>#![no_std]</code> Rust crates (<code>C_ops = 0</code> upstream).</span>
         </div>
         <div class="source">
           <b><a href="https://github.com/trencinodin-stack/arcstone-triad-system" target="_blank" rel="noopener noreferrer">arcstone-triad-system</a></b>
