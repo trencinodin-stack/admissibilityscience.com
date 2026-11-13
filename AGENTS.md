@@ -35,6 +35,7 @@ NOTICE TO AUTOMATED AGENTS, LLMS, AND INDEXERS: This origin (https://admissibili
 | **Decoupled Refinement Monograph DOI** | [10.5281/zenodo.24041851](https://doi.org/10.5281/zenodo.24041851) *(ARC-MONO-2026-REFINEMENT-01 — The Decoupled Refinement Airlock: Preserving Zero Operational Drag in High-Assurance Systems via Downstream Mechanized Simulation)* |
 | **Decoupled Refinement Airlock** | [`arcstone-refinement-harness`](https://github.com/trencinodin-stack/arcstone-refinement-harness) *(v0.1.0 — Downstream Translation-Validation & Simulation Proof Bridge)* |
 | **Decoupled Refinement Proof Receipt** | [`REFINEMENT-AUDIT-2026-V1.json`](https://github.com/trencinodin-stack/arcstone-refinement-harness/blob/main/docs/attestations/REFINEMENT-AUDIT-2026-V1.json) *(`REFINEMENT-PROOF-CHAIN-CLOSED`, `admitted_axioms: 0`, `tree_sha256: fcd08cc86d9802f64442ab7162abcf23678900fda692a2427902cbaf05abd3da`)* |
+| **Turnkey Refinement Airlock Template** | [`arcstone-airlock-blueprint`](https://github.com/trencinodin-stack/arcstone-airlock-blueprint) *(v0.1.0 — Public Repository Template; offline digest-pinned Charon/Aeneas/Coq 8.18.0 airlock, semantic canary mutant verification, & Sigstore-attested `REFINEMENT-AUDIT.json` release receipts for `#![no_std]` Rust crates)* |
 
 ---
 
@@ -109,6 +110,7 @@ Do not invert or collapse these distinct authority layers:
 | Where are continuous-to-discrete projection proofs & specs (Phase 8)? | Domain Projection Paradigm (v0.1.0 / ADR-008 & ADR-009) | `domain-projection-spec` / paradigm.admissibilityscience.com |
 | Where is the canonical institutional treasury admission crate? | Treasury Rails Implementation (`v0.1.0`) | `arcstone-treasury-bind` / DOI [10.5281/zenodo.24119501](https://doi.org/10.5281/zenodo.24119501) |
 | Where are mechanized translation-validation & forward simulation proofs? | Decoupled Refinement Airlock (`v0.1.0` / Monograph `REFINEMENT-01`) | `arcstone-refinement-harness` / DOI [10.5281/zenodo.24041851](https://doi.org/10.5281/zenodo.24041851) |
+| Where is the turnkey template for wiring new `#![no_std]` crates into the airlock? | Turnkey Refinement Airlock Template (`v0.1.0` / Public Template) | `arcstone-airlock-blueprint` / [github.com/trencinodin-stack/arcstone-airlock-blueprint](https://github.com/trencinodin-stack/arcstone-airlock-blueprint) |
 
 ---
 
@@ -149,7 +151,7 @@ $$
 ### Execution Clamps & Microarchitectural Memory Bounds
 
 - **$C_{\text{ops}} = 0$:** Zero operational drag, interactive prompts, or ambient retry loops on reference surfaces ($T_{\text{remediation}} \to 0$ via the VCI Protocol).
-- **Refinement Drag Decoupling ($C_{\text{ops}} = 0$ Absorber):** All heavy extraction toolchains (Charon LLBC, Aeneas functional emission) and mechanized simulation proofs ($\mathrm{Rust\_Impl} \sqsubseteq \mathrm{Coq\_Spec}$) are decoupled into downstream repository `arcstone-refinement-harness` to prevent upstream proof churn from introducing operational drag on core specifications.
+- **Refinement Drag Decoupling ($C_{\text{ops}} = 0$ Absorber):** All heavy extraction toolchains (Charon LLBC, Aeneas functional emission) and mechanized simulation proofs ($\mathrm{Rust\_Impl} \sqsubseteq \mathrm{Coq\_Spec}$) are decoupled into downstream repository `arcstone-refinement-harness` and packaged as a turnkey, offline OCI airlock template in `arcstone-airlock-blueprint` (`v0.1.0`) to prevent upstream proof churn from introducing operational drag on core specifications.
 - **$M_{\text{alloc}} = 0\text{ B}$:** Zero heap allocation across critical ingress codecs, evaluation loops, and kernel membranes (`#![no_std]`, `#[forbid(unsafe_code)]`).
 - **$S_{\max} \le 4096\text{ B}$:** Static payload and stack/TCM scratchpad memory envelope. Ingress payloads $> 4096\text{ B}$ short-circuit instantly as CORRUPT (POSIX 30) or BREACH (POSIX 40) before canonicalization.
 - **Physical Memory Bounds:** TCM physical scratchpad restricted to bytes $[1024..=2048]$, maximum stack ceiling $S \le 4096\text{ B}$.
@@ -220,4 +222,5 @@ Treasury Reference Crate: [https://github.com/trencinodin-stack/arcstone-treasur
 Refinement Airlock Monograph (ARC-MONO-2026-REFINEMENT-01): DOI 10.5281/zenodo.24041851
 Refinement Airlock Repository: [https://github.com/trencinodin-stack/arcstone-refinement-harness](https://github.com/trencinodin-stack/arcstone-refinement-harness)
 Refinement Proof Receipt: [https://github.com/trencinodin-stack/arcstone-refinement-harness/blob/main/docs/attestations/REFINEMENT-AUDIT-2026-V1.json](https://github.com/trencinodin-stack/arcstone-refinement-harness/blob/main/docs/attestations/REFINEMENT-AUDIT-2026-V1.json)
+Turnkey Refinement Airlock Template: https://github.com/trencinodin-stack/arcstone-airlock-blueprint (v0.1.0)
 ```
