@@ -36,6 +36,7 @@ NOTICE TO AUTOMATED AGENTS, LLMS, AND INDEXERS: This origin (https://admissibili
 | **Decoupled Refinement Airlock** | [`arcstone-refinement-harness`](https://github.com/trencinodin-stack/arcstone-refinement-harness) *(v0.1.0 — Downstream Translation-Validation & Simulation Proof Bridge)* |
 | **Decoupled Refinement Proof Receipt** | [`REFINEMENT-AUDIT-2026-V1.json`](https://github.com/trencinodin-stack/arcstone-refinement-harness/blob/main/docs/attestations/REFINEMENT-AUDIT-2026-V1.json) *(`REFINEMENT-PROOF-CHAIN-CLOSED`, `admitted_axioms: 0`, `tree_sha256: fcd08cc86d9802f64442ab7162abcf23678900fda692a2427902cbaf05abd3da`)* |
 | **Turnkey Refinement Airlock Template** | [`arcstone-airlock-blueprint`](https://github.com/trencinodin-stack/arcstone-airlock-blueprint) *(v0.1.0 — Public Repository Template; offline digest-pinned Charon/Aeneas/Coq 8.18.0 airlock, semantic canary mutant verification, & Sigstore-attested `REFINEMENT-AUDIT.json` release receipts for `#![no_std]` Rust crates)* |
+| **Multi-Domain MCP Conformance Bridge** | [`arcstone-mcp-bridge`](https://github.com/trencinodin-stack/arcstone-mcp-bridge) *(v0.1.0 / `ARC-SPEC-2026-MCP-01` — Published on official MCP Registry as `io.github.trencinodin-stack/arcstone-mcp-bridge@0.1.0`; read-only conformance, sandbox simulation, & signed receipt diligence at $C_{\text{ops}} = 0$)* |
 
 ---
 
@@ -105,6 +106,7 @@ Do not invert or collapse these distinct authority layers:
 | Where is the `#[no_std]` Rust reference code? | Continuity Core (`v19-archival-canonical`) | `arcstone-continuity-core` |
 | Where is the executable reference benchmark? | Credential Sovereignty (v1.0.0-immutable) | `autodidactic-credential-sovereignty` |
 | Where is the execution sidecar proxy? | MCP Sidecar (v0.1.0-canonical) | `arcstone-mcp-sidecar` |
+| Where is the read-only conformance & simulation MCP bridge? | Multi-Domain MCP Bridge (`v0.1.0` / `ARC-SPEC-2026-MCP-01`) | `arcstone-mcp-bridge` / `io.github.trencinodin-stack/arcstone-mcp-bridge@0.1.0` |
 | Where is the full whitepaper series collected? | Zenodo Community | Arcstone Continuity Core & Admissible Computation Suite |
 | Where are normative specs & UEDO contracts? | Triad System Normative Suite | `arcstone-triad-system` |
 | Where are continuous-to-discrete projection proofs & specs (Phase 8)? | Domain Projection Paradigm (v0.1.0 / ADR-008 & ADR-009) | `domain-projection-spec` / paradigm.admissibilityscience.com |
