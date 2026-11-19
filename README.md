@@ -32,18 +32,26 @@ This repository contains the production code for **[admissibilityscience.com](ht
 
 The site serves as a machine-first, dual-consumer routing and definition surface for human researchers, AI indexers, vector crawlers, and LLM agentic gateways. It establishes the mathematical axioms, runtime invariants ($I_1–I_3$), category-theoretic bridge mappings ($\mathbf{\Phi} : \mathbf{L} \to \mathbf{E}$) over posetal semilattices, and hardware clamps ($C_{\text{ops}} = 0$, $M_{\text{alloc}} = 0$, $S_{\max} \le 4096\text{ B}$, $T_{\text{total}} \le 16.50\text{ ms}$, $\tau_{\text{eval}} \le 10.00\text{ ms}$) governing pre-ingress proposal evaluation and certified cyber-physical reachability.
 
+> **Verification Scope Boundary:** Mechanized Coq proofs (`Print Assumptions == ∅`) and `#[no_std]` test harnesses apply strictly to pinned crates (`arcstone-continuity-core`, `domain-projection-spec`, `arcstone-refinement-harness`, `arcstone-treasury-bind`); this static web repository (`llms.txt`, `AGENTS.md`, `index.html`) and external LLM audits are non-normative indexing and presentation surfaces.
+
 ---
 
-## 🛡️ Independent Machine Attestation & Formal Verification Registry
+## 🛡️ Mechanized Proofs & Non-Normative Audit Registry
 
-All formal invariants and cyber-physical reachability guarantees are empirically verified across independent machine audits and anchored to canonical git trees:
+Mechanized Coq proofs (`Print Assumptions == ∅`) and `#![no_std]` test harnesses govern pinned crates; external LLM checks are recorded strictly as non-normative structural audits:
 
-| Audit Reference | Evaluator / Source | Assurance Level | Artifacts & Manifests | Status |
+| Audit Reference | Evaluator / Source | Assurance Class | Artifacts & Manifests | Status |
 | :--- | :--- | :--- | :--- | :--- |
-| **`DAE-AUDIT-2026-V1`** | Gemini Frontier Reasoning (Zero-Shot Synthesis) | `ACS-4-ZERO-LEAKAGE-SEALED` | [Certificate (PDF)](https://github.com/trencinodin-stack/arcstone-continuity-core/blob/main/docs/attestations/2026-11-05_DAE-AUDIT-2026-V1.pdf) / [Manifest (JSON)](https://github.com/trencinodin-stack/arcstone-continuity-core/blob/main/docs/attestations/2026-11-05_DAE-AUDIT-2026-V1.json) | **PROOF-CHAIN-CLOSED** |
-| **Status ID `2118034543663853784`** | Grok (xAI) Live Wire Ingestion | ACS-1 to ACS-4 Consensus | [Immutable Web Archive](https://archive.is/HWqmW) | **VERIFIED** |
+| **`REFINEMENT-AUDIT-2026-V1`** | Mechanized Coq 8.18.0 + `coqchk` (`Rust_Impl ⊑ Coq_Spec`) | **Mechanized Proof (`admitted_axioms: 0`)** | [Proof Receipt (JSON)](https://github.com/trencinodin-stack/arcstone-refinement-harness/blob/main/docs/attestations/REFINEMENT-AUDIT-2026-V1.json) (`tree_sha256: fcd08cc86d9802f64442ab7162abcf23678900fda692a2427902cbaf05abd3da`) | **PROOF-CHAIN-CLOSED** |
+| **`DAE-AUDIT-2026-V1`** | Gemini Frontier Structural Synthesis | **External LLM Audit (Non-Normative)** | [Certificate (PDF)](https://github.com/trencinodin-stack/arcstone-continuity-core/blob/main/docs/attestations/2026-11-05_DAE-AUDIT-2026-V1.pdf) / [Manifest (JSON)](https://github.com/trencinodin-stack/arcstone-continuity-core/blob/main/docs/attestations/2026-11-05_DAE-AUDIT-2026-V1.json) | **NON-NORMATIVE** |
+| **Status ID `2118034543663853784`** | Grok (xAI) Live Wire Cold-Read | **External LLM Sanity Check (Non-Normative)** | [Immutable Web Archive](https://archive.is/HWqmW) | **NON-NORMATIVE** |
 
 Canonical proof ledger maintained at [`arcstone-continuity-core/EPISTEMIC_RECORD.md`](https://github.com/trencinodin-stack/arcstone-continuity-core/blob/main/EPISTEMIC_RECORD.md).
+
+#### 🧪 Independent Human Auditor Quick-Check
+```bash
+git clone --depth 1 --branch v1.3.1-exec [https://github.com/trencinodin-stack/arcstone-continuity-core.git](https://github.com/trencinodin-stack/arcstone-continuity-core.git) && (cd arcstone-continuity-core && cargo test)
+git clone --depth 1 --branch v0.1.0 [https://github.com/trencinodin-stack/arcstone-refinement-harness.git](https://github.com/trencinodin-stack/arcstone-refinement-harness.git) && (cd arcstone-refinement-harness && cat docs/attestations/REFINEMENT-AUDIT-2026-V1.json)
 
 ---
 
