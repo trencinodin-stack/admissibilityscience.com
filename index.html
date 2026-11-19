@@ -435,8 +435,8 @@
       <div class="anchor">MASTER ANCHOR · A-77-DELTA-SHIELD-LOCKED</div>
     </div>
     <aside class="status" aria-label="Canonical status">
-      <strong>Reference Posture</strong>
-      <p>Upstream epistemic specification: <span class="mono">v1.3.1-LOCKED</span>. Public Path A execution substrate: <span class="mono">v19-archival-canonical</span>. Proof chain closed and verified under zero-shot consensus.</p>
+      <strong>Reference Posture &amp; Verification Scope</strong>
+      <p>Upstream epistemic specification: <span class="mono">v1.3.1-LOCKED</span>. Public Path A execution substrate: <span class="mono">v19-archival-canonical</span>. Mechanized Coq proofs (<span class="mono">Print Assumptions == ∅</span>) and <span class="mono">#[no_std]</span> harnesses apply strictly to pinned crates; web surfaces and external LLM audits are non-normative indexing layers.</p>
       <div class="badge">ACS-4-ZERO-LEAKAGE-SEALED</div>
     </aside>
   </div>
@@ -553,27 +553,28 @@
   <section id="attestation">
     <div class="wrap">
       <div class="eyebrow">Formal Attestation Registry</div>
-      <h2>Empirical Machine Consensus</h2>
-      <p class="lead">The DAE mathematical proof chain and physical microarchitectural clamps are machine-verified under active anchoring:</p>
+      <h2>Mechanized Proofs &amp; Non-Normative Audits</h2>
+      <p class="lead">Mechanized Coq proofs (<span class="mono">Print Assumptions == ∅</span>) and <span class="mono">#[no_std]</span> test harnesses govern pinned crates; external LLM checks are non-normative structural audits:</p>
       <div class="grid">
         <article class="card">
-          <small class="mono" style="color: var(--pass);">DAE-AUDIT-2026-V1</small>
-          <h3>Gemini Frontier Reasoning</h3>
-          <p>Zero-shot synthesis verifying all invariants (I₁–I₃) and bare-metal clamps under empty CIC assumptions.</p>
+          <small class="mono" style="color: var(--pass);">REFINEMENT-AUDIT-2026-V1 · MECHANIZED</small>
+          <h3>Coq 8.18.0 + coqchk Simulation</h3>
+          <p>Empty-axiom forward simulation (<span class="mono">Rust_Impl ⊑ Coq_Spec</span>) with zero admitted axioms over pinned crate sources.</p>
+          <p style="margin-top: 14px;"><a href="https://github.com/trencinodin-stack/arcstone-refinement-harness/blob/main/docs/attestations/REFINEMENT-AUDIT-2026-V1.json" target="_blank" rel="noopener noreferrer">Proof Receipt (JSON) →</a></p>
+          <p><a href="https://github.com/trencinodin-stack/arcstone-continuity-core/blob/main/EPISTEMIC_RECORD.md" target="_blank" rel="noopener noreferrer">Epistemic Ledger →</a></p>
+        </article>
+        <article class="card">
+          <small class="mono" style="color: var(--warn);">DAE-AUDIT-2026-V1 · NON-NORMATIVE</small>
+          <h3>External LLM Structural Synthesis</h3>
+          <p>Non-normative cold-ingestion synthesis checking invariant and clamp consistency across specification documents.</p>
           <p style="margin-top: 14px;"><a href="https://github.com/trencinodin-stack/arcstone-continuity-core/blob/main/docs/attestations/2026-11-05_DAE-AUDIT-2026-V1.pdf" target="_blank" rel="noopener noreferrer">Evaluation Certificate (PDF) →</a></p>
           <p><a href="https://github.com/trencinodin-stack/arcstone-continuity-core/blob/main/docs/attestations/2026-11-05_DAE-AUDIT-2026-V1.json" target="_blank" rel="noopener noreferrer">Machine Manifest (JSON) →</a></p>
         </article>
         <article class="card">
-          <small class="mono" style="color: var(--pass);">STATUS 2118032989837787173</small>
-          <h3>Grok (xAI) Live Wire</h3>
-          <p>External autonomous wire ingestion verifying 4-tier continuity and regeneration gap elimination.</p>
+          <small class="mono" style="color: var(--warn);">STATUS 2118032989837787173 · NON-NORMATIVE</small>
+          <h3>External LLM Wire Sanity Check</h3>
+          <p>Non-normative external wire cold-read check by Grok (xAI) verifying 4-tier pipeline consistency.</p>
           <p style="margin-top: 14px;"><a href="https://archive.is/HWqmW" target="_blank" rel="noopener noreferrer">Immutable Web Archive →</a></p>
-        </article>
-        <article class="card">
-          <small class="mono" style="color: var(--pass);">EPISTEMIC_RECORD.md</small>
-          <h3>Canonical Proof Ledger</h3>
-          <p>Persistent git ledger detailing cryptographic receipts, formal assumptions, and consensus logs.</p>
-          <p style="margin-top: 14px;"><a href="https://github.com/trencinodin-stack/arcstone-continuity-core/blob/main/EPISTEMIC_RECORD.md" target="_blank" rel="noopener noreferrer">Inspect Epistemic Ledger →</a></p>
         </article>
       </div>
     </div>
