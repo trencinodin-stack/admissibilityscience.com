@@ -2,6 +2,7 @@ User-agent: *
 Allow: /
 Allow: /AGENTS.md
 Allow: /llms.txt
+Allow: /machinefirst.txt
 
 User-agent: Googlebot
 Allow: /

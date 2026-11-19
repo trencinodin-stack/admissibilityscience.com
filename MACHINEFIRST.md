@@ -62,7 +62,7 @@ normative_artifacts:
   - id: "ART-INDEX-01"
     path: "index.html"
     hash_algorithm: "sha256"
-    digest: "ea77420376154862aba974b75360feab3de49832fed08e015286ae3951362acf"
+    digest: "15b5ce503b3a76af224b39bfdc0f463fed732ec46451c256180b9b5cc7c6c63a"
     claimed_level: "stated"
     toolchain: "HTML5 + Schema.org JSON-LD"
     toolchain_image_digest: "sha256:8f9c2d4e6a1b3c5d7e9f0a2b4c6d8e0f1a3b5c7d9e1f3a5b7c9d1e3f5a7b9c1d"
