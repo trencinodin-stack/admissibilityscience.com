@@ -142,7 +142,7 @@ conformance_guards:
 ```yaml
 quick_check:
   checkout: "git clone https://github.com/trencinodin-stack/admissibilityscience.com.git && cd admissibilityscience.com && git checkout --detach 4400eae449077cba724d54ac7830bec8d6538441"
-  verify_revision: "test \$$(git rev-parse HEAD
+  verify_revision: 'test "$(git rev-parse HEAD)" = "4400eae449077cba724d54ac7830bec8d6538441"'
 )\" = \"4400eae449077cba724d54ac7830bec8d6538441\""
   verify_contract_delta: "git diff --name-only 4400eae449077cba724d54ac7830bec8d6538441 HEAD"
   verify_artifact_digests: "sha256sum -c MACHINEFIRST.sha256"
