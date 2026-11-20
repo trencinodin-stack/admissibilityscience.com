@@ -24,15 +24,15 @@ subject:
   canonical_urls: ["https://admissibilityscience.com", "https://admissibilityscience.com/machinefirst.txt"]
   subject_revision: "4400eae449077cba724d54ac7830bec8d6538441"
   revision_semantics: "exact_git_commit"
-  release_tag: "v1.3.1-exec"
+  release_tag: "v1.0.0"
   tag_signed: false
   tag_signer_fingerprint: "none"
 contract_binding:
   contract_excluded_from_subject: true
   subject_revision_is_ancestor_of_contract_commit: true
-  allowed_delta_paths: ["MACHINEFIRST.md", "machinefirst.txt", "MACHINEFIRST.sha256", "validate_machinefirst.py", "llms.txt", "AGENTS.md", "robots.txt", "sitemap.xml", ".github/workflows/lint.yml", "README.md"]
+  allowed_delta_paths: ["MACHINEFIRST.md", "machinefirst.txt", "MACHINEFIRST.sha256", "validate_machinefirst.py", "llms.txt", "AGENTS.md", "SECURITY.md", "robots.txt", "sitemap.xml", ".github/workflows/lint.yml", "README.md"]
   contract_digest_published_in: "repository_commit_history"
-  mirror_rule: "web /machinefirst.txt must be byte-identical UTF-8 to repository MACHINEFIRST.md at release_tag"
+  mirror_rule: "web /machinefirst.txt must be byte-identical UTF-8 to repository MACHINEFIRST.md at contract commit / HEAD"
 persistent_ids:
   doi: ["10.5281/zenodo.24093739", "10.5281/zenodo.22665852", "10.5281/zenodo.23967282", "10.5281/zenodo.23069559"]
   orcid: ["0000-0009-0008-4661-1540"]
@@ -164,5 +164,5 @@ quick_check:
 ```yaml
 known_gaps:
   - "Mechanized Coq proofs and Rust test harnesses reside in upstream pinned repositories rather than this static web root; see Section 4 routing table"
-  - "Git tag v1.3.1-exec is unsigned until GPG/Sigstore release signing is configured"
+  - "Git tag v1.0.0 is unsigned until GPG/Sigstore release signing is configured"
 ```
