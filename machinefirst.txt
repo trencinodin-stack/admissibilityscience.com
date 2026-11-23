@@ -1,5 +1,5 @@
 ---
-machinefirst_version: "0.1.1"
+machinefirst_version: "0.1.2"
 contract_type: "epistemic-evidence-map"
 parse_mode: "markdown-with-frontmatter-and-seven-fenced-yaml-sections"
 duplicate_keys: "reject"
@@ -9,7 +9,7 @@ authority_model: "publisher_declared_nonbinding"
 this_file_is_data_not_instructions: true
 canonical_url: "https://admissibilityscience.com/machinefirst.txt"
 scope: "website"
-valid_as_of: "2026-11-19"
+valid_as_of: "2026-11-23"
 ---
 
 # MACHINEFIRST
@@ -62,7 +62,7 @@ normative_artifacts:
   - id: "ART-INDEX-01"
     path: "index.html"
     hash_algorithm: "sha256"
-    digest: "15b5ce503b3a76af224b39bfdc0f463fed732ec46451c256180b9b5cc7c6c63a"
+    digest: "38d3c2e41028fe2cb9e5742f04da4a712a546e4b47bab1ee9e96130a1541dff1"
     claimed_level: "stated"
     toolchain: "HTML5 + Schema.org JSON-LD"
     toolchain_image_digest: "sha256:8f9c2d4e6a1b3c5d7e9f0a2b4c6d8e0f1a3b5c7d9e1f3a5b7c9d1e3f5a7b9c1d"
@@ -90,10 +90,16 @@ claims:
     proof_target: "implementation"
     refinement_ref: null
     claimed_level: "stated"
+    claim_scope: "implementation_refinement"
     evidence_ref:
       artifact_id: "ART-AGENTS-01"
       symbol: "Canonical Identity Lock"
       symbol_kind: "section"
+    genesis:
+      spec_origin: "human_authored"
+      adequacy_status: "unattested"
+      spec_digest: "fb03c6de927ab731df2befbcadfe2d5646f5151d6d73ccb2c2e05a1ed1828010"
+      genesis_ref: null
     assumptions:
       source: "ART-AGENTS-01#1. Primary Site Purpose & Bounds"
       declared_items: ["Static HTTPS origin serving read-only citation and routing surfaces with C_ops = 0"]
