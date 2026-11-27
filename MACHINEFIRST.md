@@ -48,14 +48,14 @@ normative_artifacts:
   - id: "ART-LLMS-01"
     path: "llms.txt"
     hash_algorithm: "sha256"
-    digest: "321a2dced1fc5e2bb668842e63cbb8232f26f20ccca3385945b04f32536a6575"
+    digest: "44a1df409e179314d76376d69ea36a69edccb4bf9e922eba647313753f5418ea"
     claimed_level: "stated"
     toolchain: "UTF-8 Markdown Discovery Index"
     toolchain_image_digest: "sha256:8f9c2d4e6a1b3c5d7e9f0a2b4c6d8e0f1a3b5c7d9e1f3a5b7c9d1e3f5a7b9c1d"
   - id: "ART-AGENTS-01"
     path: "AGENTS.md"
     hash_algorithm: "sha256"
-    digest: "50252a3bb81e035c9f9fbdaac98bd51d2298712dd6ed52db4d7410653d98d9a6"
+    digest: "4ad7a2567ee300386bccb19ebc5e5e831682f13820bad8b53d905ac051296144"
     claimed_level: "stated"
     toolchain: "UTF-8 Markdown Agent Manifest"
     toolchain_image_digest: "sha256:8f9c2d4e6a1b3c5d7e9f0a2b4c6d8e0f1a3b5c7d9e1f3a5b7c9d1e3f5a7b9c1d"
@@ -98,7 +98,7 @@ claims:
     genesis:
       spec_origin: "human_authored"
       adequacy_status: "unattested"
-      spec_digest: "50252a3bb81e035c9f9fbdaac98bd51d2298712dd6ed52db4d7410653d98d9a6"
+      spec_digest: "4ad7a2567ee300386bccb19ebc5e5e831682f13820bad8b53d905ac051296144"
       genesis_ref: null
     assumptions:
       source: "ART-AGENTS-01#1. Primary Site Purpose & Bounds"

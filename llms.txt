@@ -83,11 +83,11 @@
 
 > **Scope Notice:** `https://admissibilityscience.com/` is a read-only static discovery surface. All effectful commercial and academic intake requests execute exclusively against `https://gate.arcstoneos.com` (`path-b-sanitizer` `v1.3.3-EXEC`).
 
-- **Endpoint & Auth:** `POST https://gate.arcstoneos.com` (No bearer token required; CORS `POST, GET, OPTIONS` enabled; `GET ` returns active health metadata).
+- -*Endpoint & Auth:** `POST https://gate.arcstoneos.com` (No bearer token required; CORS `POST, GET, OPTIONS` enabled; `GET /` returns active health metadata).
 - **Required Header:** `Content-Type: application/json`
 - **Strict Validation Precedence & HTTP/POSIX Mapping:**
-  1. **Method Gate:** Non-`POST`/`GET`/`OPTIONS` returns HTTP  405` (`X-Arcstone-Exit: POSIX_40_METHOD_DISALLOWED`).
-  2. **Wire Size Gate:** Raw UTF-8 body `> 4096` bytes returns HTTP  413` (`POSIX 30` / `RAW_SIZE_EXCEEDED`).
+  1. **Method Gate:** Non-`POST`/`GET`/`OPTIONS` returns HTTP `405` (`X-Arcstone-Exit: POSIX_40_METHOD_DISALLOWED`).
+  2. **Wire Size Gate:** Raw UTF-8 json body `> 4096` bytes returns HTTP  413` (`POSIX 30` / `RAW_SIZE_EXCEEDED`).
   3. **Case-Insensitive Drag Filter:** Lowercased body containing `"zoom call"`, `"google meet"`, `"phone call"`, or `"live demo"` returns HTTP  400` (`POSIX 40` / `SYNCHRONOUS_DRAG_PROHIBITED`).
   4. **JSON Object & Closed-Alphabet Linter (`CSS-01`):** Non-object JSON (including arrays or primitives) or malformed syntax returns HTTP  400` (`POSIX 30` / `INVALID_JSON_STRUCTURE`). Any key outside the 24 whitelisted keys below returns HTTP `400` (`POSIX 40` / `CSS_01_UNMAPPED_KEY_REJECTED`).
   5. **Routing Identity Gate:** Commercial payloads must include at least one valid contact email (`customer_email`, `client_email`, requester_entity.contact_email containing `@`), or an academic identifier (`orcid_id`, `institution_id`, `proof_pi_dae`, `verifiable_credential_id`), otherwise HTTP `400` (`POSIX 40` / `MISSING_COMMERCIAL_ROUTING_EMAIL`).
