@@ -100,6 +100,7 @@ Do not invert or collapse these distinct authority layers:
 | Where is the definitive mathematical capstone specification? | Reference Specification Layer | DOI [10.5281/zenodo.24093739](https://doi.org/10.5281/zenodo.24093739) (`ARC-CAPSTONE-2026-SYNTH-01-REV19`) |
 | What are the registered fields, laws, & domains? | Arcstone Science Authority | https://arcstonescienceauthority.org/ |
 | Where is industrial runtime & deployment? | Arcstone OS | https://www.arcstoneos.com/ |
+| Where is the commercial & academic intake wire gate (`CSS-01`)? | Path B Edge Sanitizer (`v1.3.3-EXEC`) | https://gate.arcstoneos.com/ |
 | What is the protocol contract? | ENP Specification (LOCKED) | `arcstone-spec-epistemic-01` |
 | Where is the `#[no_std]` Rust reference code? | Continuity Core (`v19-archival-canonical`) | `arcstone-continuity-core` |
 | Where is the executable reference benchmark? | Credential Sovereignty (v1.0.0-immutable) | `autodidactic-credential-sovereignty` |
@@ -189,6 +190,44 @@ $$
 $$
 
 Bounding observer estimation error over evaluation horizons.
+
+## Commercial & Academic Intake Wire Contract (`gate.arcstoneos.com` · `CSS-01`)
+
+> **Scope Notice:** `https://admissibilityscience.com/` is a read-only static discovery surface. All effectful commercial and academic intake requests execute exclusively against `https://gate.arcstoneos.com` (`path-b-sanitizer` `v1.3.3-EXEC`).
+
+- **Endpoint & Auth:** `POST https://gate.arcstoneos.com` (No bearer token required; CORS `POST, GET, OPTIONS` enabled; `GET ` returns active health metadata).
+- **Required Header:** `Content-Type: application/json`
+- **Strict Validation Precedence & HTTP/POSIX Mapping:**
+  1. **Method Gate:** Non-`POST`/`GET`/`OPTIONS` returns HTTP  405` (`X-Arcstone-Exit: POSIX_40_METHOD_DISALLOWED`).
+  2. **Wire Size Gate:** Raw UTF-8 body `> 4096` bytes returns HTTP  413` (`POSIX 30` / `RAW_SIZE_EXCEEDED`).
+  3. **Case-Insensitive Drag Filter:** Lowercased body containing `"zoom call"`, `"google meet"`, `"phone call"`, or `"live demo"` returns HTTP  400` (`POSIX 40` / `SYNCHRONOUS_DRAG_PROHIBITED`).
+  4. **JSON Object & Closed-Alphabet Linter (`CSS-01`):** Non-object JSON (including arrays or primitives) or malformed syntax returns HTTP  400` (`POSIX 30` / `INVALID_JSON_STRUCTURE`). Any key outside the 24 whitelisted keys below returns HTTP `400` (`POSIX 40` / `CSS_01_UNMAPPED_KEY_REJECTED`).
+  5. **Routing Identity Gate:** Commercial payloads must include at least one valid contact email (`customer_email`, `client_email`, requester_entity.contact_email containing `@`), or an academic identifier (`orcid_id`, `institution_id`, `proof_pi_dae`, `verifiable_credential_id`), otherwise HTTP `400` (`POSIX 40` / `MISSING_COMMERCIAL_ROUTING_EMAIL`).
+  6. **Admission & Async Receipt (`POSIX 0`):** Valid requests return HTTP `200` (`X-Arcstone-Exit: POSIX_0_PASS`) with JSON `{"status":"PASS","posix_code":0,"result":"CONTEXT_SERIALIZED_TO_TRQ","permit":"SIGMA-<uuid>",...}` and enqueue asynchronous settlement (`TRQ_QUEUE`). Each accepted `POST` mints a new permit and Stripe invoice; do not blindly auto-retry timed-out commercial submissions without verifying receipt state.
+- **Clamping & Routing Semantics:**
+  - Key order and insignificant whitespace are ignored.
+  - For commercial billing, `amount_cents` *(integer USD cents)* is silently clamped to a `## 8. Machine Citation Block,000` floor (`100000`) when omitted or `< 100000`, and clamped to a $100,000` ceiling `a10000000` when `> 10000000` (decimal unit clamp applied).
+  - Including any of `orcid_id`, `institution_id`, `proof_pi_dae`, or `verifiable_credential_id` routes the request to `EXECUTE_ACADEMIC_CREDENTIAL3VERIFY` rather than commercial invoicing.
+- **Closed-Alphabet Allowed Keys (`CSS-01` — 24 Keys Only):**
+  - **Commercial & Core (12):** `agent_id` **string*), `agent_type` **string**, `amount_cents` **integer**, `action` *(string, e.g., `"COMMERCIAL_INTAKE"`)*, `target` **string**, `pair` **string**, `vector` *(string/array)*, `ast_hash` **string**, `client_email` **string**, `customer_email` **string**, `requester_entity` **object/string**, `raw_payload_str` **string**
+  - **Academic & ZK (7):** `orcid_id` **string**, `institution_id` **string**, `proof_pi_dae` **string**, `verifiable_credential_id` **string**, `cae_level` *(integer/string)*, `syllabus_ref` **string**, `coq_proof_hash` **string**
+  - **Continuous Observation (5):** `noise_bound` *(number/string)*, `gamma_witness` **string**, `observation_token` **string**, `tau_eval` *(number/string)*, `d_latch` *(number/string**
+
+### Canonical `$5,000` Commercial Intake Example
+```bash
+curl -sS -X POST 'https://gate.arcstoneos.com' \
+  -H 'Content-Type: application/json' \
+  --data-binary '{
+    "agent_id": "procurement-agent-01",
+    "customer_email": "billing@example.com",
+    "amount_cents": 500000,
+    "action": "COMMERCIAL_INTAKE",
+    "target": "arcstone-treasury-bind"
+  }'
+```
+
+
+---
 
 ## 8. Machine Citation Block
 
