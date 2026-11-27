@@ -199,15 +199,15 @@ Bounding observer estimation error over evaluation horizons.
 - **Required Header:** `Content-Type: application/json`
 - **Strict Validation Precedence & HTTP/POSIX Mapping:**
   1. **Method Gate:** Non-`POST`/`GET`/`OPTIONS` returns HTTP `405` (`X-Arcstone-Exit: POSIX_40_METHOD_DISALLOWED`).
-  2. **Wire Size Gate:** Raw UTF-8 json body `> 4096` bytes returns HTTP  413` (`POSIX 30` / `RAW_SIZE_EXCEEDED`).
-  3. **Case-Insensitive Drag Filter:** Lowercased body containing `"zoom call"`, `"google meet"`, `"phone call"`, or `"live demo"` returns HTTP  400` (`POSIX 40` / `SYNCHRONOUS_DRAG_PROHIBITED`).
-  4. **JSON Object & Closed-Alphabet Linter (`CSS-01`):** Non-object JSON (including arrays or primitives) or malformed syntax returns HTTP  400` (`POSIX 30` / `INVALID_JSON_STRUCTURE`). Any key outside the 24 whitelisted keys below returns HTTP `400` (`POSIX 40` / `CSS_01_UNMAPPED_KEY_REJECTED`).
+  2. **Wire Size Gate:** Raw UTF-8 json body `> 4096` bytes returns HTTP `413` (`POSIX 30` / `RAW_SIZE_EXCEEDED`).
+  3. **Case-Insensitive Drag Filter:** Lowercased body containing `"zoom call"`, `"google meet"`, `"phone call"`, or `"live demo"` returns HTTP `400` (`POSIX 40` / `SYNCHRONOUS_DRAG_PROHIBITED`).
+  4. **JSON Object & Closed-Alphabet Linter (`CSS-01`):** Non-object JSON (including arrays or primitives) or malformed syntax returns HTTP `400` (`POSIX 30` / `INVALID_JSON_STRUCTURE`). Any key outside the 24 whitelisted keys below returns HTTP `400` (`POSIX 40` / `CSS_01_UNMAPPED_KEY_REJECTED`).
   5. **Routing Identity Gate:** Commercial payloads must include at least one valid contact email (`customer_email`, `client_email`, requester_entity.contact_email containing `@`), or an academic identifier (`orcid_id`, `institution_id`, `proof_pi_dae`, `verifiable_credential_id`), otherwise HTTP `400` (`POSIX 40` / `MISSING_COMMERCIAL_ROUTING_EMAIL`).
   6. **Admission & Async Receipt (`POSIX 0`):** Valid requests return HTTP `200` (`X-Arcstone-Exit: POSIX_0_PASS`) with JSON `{"status":"PASS","posix_code":0,"result":"CONTEXT_SERIALIZED_TO_TRQ","permit":"SIGMA-<uuid>",...}` and enqueue asynchronous settlement (`TRQ_QUEUE`). Each accepted `POST` mints a new permit and Stripe invoice; do not blindly auto-retry timed-out commercial submissions without verifying receipt state.
 - **Clamping & Routing Semantics:**
   - Key order and insignificant whitespace are ignored.
-  - For commercial billing, `amount_cents` *(integer USD cents)* is silently clamped to a `$1,000` floor (`100000`) when omitted or `< 100000`, and clamped to a $100,000` ceiling `a10000000` when `> 10000000` (decimal unit clamp applied).
-  - Including any of `orcid_id`, `institution_id`, `proof_pi_dae`, or `verifiable_credential_id` routes the request to `EXECUTE_ACADEMIC_CREDENTIAL3VERIFY` rather than commercial invoicing.
+  - For commercial billing, `amount_cents` *(integer USD cents)* is silently clamped to a `$1,000` floor (`100000`) when omitted or `< 100000`, and clamped to a `$100,000` ceiling (`10000000`) when `> 10000000` (decimal unit clamp applied).
+  - Including any of `orcid_id`, `institution_id`, `proof_pi_dae`, or `verifiable_credential_id` routes the request to `EXECUTE_ACADEMIC_CREDENTIAL_VERIFY` rather than commercial invoicing.
 - **Closed-Alphabet Allowed Keys (`CSS-01` — 24 Keys Only):**
   - **Commercial & Core (12):** `agent_id` **string*), `agent_type` **string**, `amount_cents` **integer**, `action` *(string, e.g., `"COMMERCIAL_INTAKE"`)*, `target` **string**, `pair` **string**, `vector` *(string/array)*, `ast_hash` **string**, `client_email` **string**, `customer_email` **string**, `requester_entity` **object/string**, `raw_payload_str` **string**
   - **Academic & ZK (7):** `orcid_id` **string**, `institution_id` **string**, `proof_pi_dae` **string**, `verifiable_credential_id` **string**, `cae_level` *(integer/string)*, `syllabus_ref` **string**, `coq_proof_hash` **string**
